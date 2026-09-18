@@ -386,7 +386,7 @@ export const faqItems: FAQItem[] = [
     question: "Is there a Kingdom Rush 6: Genesis TD wiki?",
     answer:
       "No third-party wiki has indexed the title as of research date. The launch-week FAQ surface is the Steam Community Hub for AppID 4259190, r/KingdomRush, and the Ironhide newsroom.",
-    pageIds: ["wiki-faq"],
+    pageIds: ["wiki"],
     category: "wiki",
     schemaEligible: true,
     sourceStatus: "internal",
@@ -396,7 +396,7 @@ export const faqItems: FAQItem[] = [
     question: "Where can I ask Kingdom Rush 6: Genesis TD questions?",
     answer:
       "Use the Steam Community Hub for AppID 4259190 for launch-day player discussions, r/KingdomRush for community demand signals, and the Ironhide newsroom for official announcements.",
-    pageIds: ["wiki-faq"],
+    pageIds: ["wiki"],
     category: "wiki",
     schemaEligible: true,
     sourceStatus: "internal",

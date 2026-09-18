@@ -284,9 +284,9 @@ export const kr6Pages: PageContent[] = [
     h1: "Kingdom Rush 6: Genesis TD heroes: 12-hero roster and pair deployment",
     seoTitle: "Kingdom Rush 6: Genesis TD Heroes: 12 Roster & Pair Deployment",
     metaDescription:
-      "Kingdom Rush 6: Genesis TD launches with 12 epic heroes. Learn the pair-deployment mechanic, the Steam store ability scope, and where to find the launch-week roster discussion.",
+      "Kingdom Rush 6: Genesis TD launches with 12 epic heroes. Browse the 11 publicly named heroes with lore tags, the pair-deployment mechanic, and the Steam store ability scope.",
     summary:
-      "12 epic heroes drive the pair-deployment mechanic. Ability scope is announced; per-hero HP and ability numbers are unannounced.",
+      "12 epic heroes drive the pair-deployment mechanic. 11 are publicly named; per-hero HP and ability numbers are unannounced.",
     hero: {
       eyebrow: "Hero roster",
       subtitle:
@@ -298,41 +298,123 @@ export const kr6Pages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Kingdom Rush 6: Genesis TD launches with 12 epic heroes selected per stage as a pair, per the Ironhide press release. Pair deployment is the core hero mechanic; specific per-hero HP and ability numbers are not announced as of research date.",
+      "Kingdom Rush 6: Genesis TD launches with 12 epic heroes selected per stage as a pair, per the Ironhide press release. 11 heroes are publicly named through Steam Community Devlogs #27 and #29; the 12th hero has not been announced as of research date.",
     keyFacts: [
       { label: "Hero count", value: "12 epic heroes" },
+      { label: "Publicly named", value: "11 of 12" },
       { label: "Deployment", value: "Pick 2 heroes per stage" },
-      { label: "Ability scope", value: "Announced at pair level" },
       { label: "Per-hero numbers", value: "Not announced" },
     ],
     modules: [
+      {
+        id: "named-roster",
+        type: "entity-grid",
+        heading: "The 11 publicly revealed heroes",
+        items: [
+          {
+            title: "Gerald",
+            summary: "Frontline knight anchor from the Linirean Order.",
+            badge: "Knight",
+            href: "/heroes/",
+          },
+          {
+            title: "Zefira",
+            summary: "Archer scout tied to the Silveroak rangers.",
+            badge: "Archer",
+            href: "/heroes/",
+          },
+          {
+            title: "Bolin",
+            summary: "Dwarven defender recruited from the Valardul holds.",
+            badge: "Barracks",
+            href: "/heroes/",
+          },
+          {
+            title: "Connor",
+            summary: "Knights Order captain with shield-and-blade melee.",
+            badge: "Knight",
+            href: "/heroes/",
+          },
+          {
+            title: "Ignus",
+            summary: "Fire-wielding mage from the Stormcloud Sorcerers.",
+            badge: "Mage",
+            href: "/heroes/",
+          },
+          {
+            title: "Malik",
+            summary: "Desert skirmisher paired with blade and dune tactics.",
+            badge: "Scout",
+            href: "/heroes/",
+          },
+          {
+            title: "Oni",
+            summary: "Demonic champion introduced in Steam Devlog #27.",
+            badge: "Champion",
+            href: "/heroes/",
+          },
+          {
+            title: "Drakkan",
+            summary: "Dragon-rider frontline with Wyvern-flying mobility.",
+            badge: "Dragon",
+            href: "/heroes/",
+          },
+          {
+            title: "Ashbite",
+            summary: "Draconic bruiser anchoring the dragon-frontline role.",
+            badge: "Dragon",
+            href: "/heroes/",
+          },
+          {
+            title: "Rhodes the Earth Bastion",
+            summary: "Earth-bastion defender revealed in Steam Devlog #29.",
+            badge: "Bastion",
+            href: "/heroes/",
+          },
+          {
+            title: "Gemina the Arcane Illusionist",
+            summary: "Arcane Illusionist from the Arcania Order, revealed in Devlog #29.",
+            badge: "Illusionist",
+            href: "/heroes/",
+          },
+          {
+            title: "Illiana the Dragon Tamer",
+            summary: "Dragon Tamer from the Linirean riding corps, revealed in Devlog #29.",
+            badge: "Tamer",
+            href: "/heroes/",
+          },
+        ],
+      },
+      {
+        id: "twelfth-placeholder",
+        type: "prose",
+        heading: "The 12th hero is still to be announced",
+        body:
+          "The Steam store and the Ironhide press release list 12 epic heroes, but only 11 are publicly named as of research date. Ironhide has not confirmed the identity of the 12th hero. Treat any third-party roster or count that lists a 12th named hero as unverified until Ironhide or the Steam Community Hub publishes the reveal.",
+      },
       {
         id: "pair-deployment",
         type: "prose",
         heading: "How pair deployment works",
         body:
-          "Pair deployment is the headline hero mechanic for Kingdom Rush 6: Genesis TD: each stage lets the player pick 2 of the 12 epic heroes. The pair rotates between stages, so choosing complementary roles — frontline tank plus backline damage, scout versus zone control — is part of the launch-week meta. The Steam store page lists 12 epic heroes; per-hero ability scopes are stated at the pair level rather than per individual hero.",
+          "Pair deployment is the headline hero mechanic for Kingdom Rush 6: Genesis TD: each stage lets the player pick 2 of the 12 epic heroes. The pair rotates between stages, so choosing complementary roles — frontline tank plus backline damage, scout versus zone control — is part of the launch-week meta. Per-hero HP, ability cooldowns, and unlock tree details are not announced; treat any third-party 'best heroes ranked' list as unverified until Ironhide or the Steam Community Hub confirms per-hero numbers.",
+        links: [
+          { label: "Controls & mechanics", href: "/controls/", description: "Pair flow and 9-spell kit." },
+        ],
       },
       {
-        id: "roster-scope",
+        id: "reveal-sources",
         type: "prose",
-        heading: "What the Steam store confirms",
+        heading: "Where the roster was revealed",
         body:
-          "The Steam store page for AppID 4259190 and the Ironhide press release on irondune.com are the authoritative sources for the 12-hero count and the pair-deployment mechanic. The Steam Community Hub for AppID 4259190 carries launch-day commentary and screenshots. Specific per-hero HP, ability cooldown numbers, and unlock tree details are not announced as of research date and must be treated as unannounced.",
-      },
-      {
-        id: "ranked-clusters",
-        type: "prose",
-        heading: "Hero rank and best-hero clusters",
-        body:
-          "Series-generic autocomplete clusters — 'kingdom rush heroes ranked,' 'kingdom rush best heroes' — surface alongside the Kingdom Rush 6: Genesis TD hero cluster. Those queries are series-generic discovery signals, not authoritative Kingdom Rush 6 data. For Kingdom Rush 6: Genesis TD specific hero comparison, the launch-week surface is the in-game pair deployment plus the Steam Community Hub threads under AppID 4259190.",
+          "The hero count and pair-deployment mechanic come from the Steam store page for AppID 4259190 and the Ironhide press release on irondune.com. Steam Community Hub Devlog #27 (Sept 4, 2026) introduced Oni with a dedicated character post. Devlog #29 'The Full Lineup' revealed Rhodes, Gemina, and Illiana as the final three named heroes. Cross-reference the live Steam Community Hub threads under AppID 4259190 for launch-day additions.",
       },
     ],
     faqIds: ["kr6-hero-count", "kr6-hero-abilities", "kr6-hero-pair-meta"],
     relatedPageIds: ["towers-list", "controls-mechanics", "beginners-guide"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-19",
   },
   {
     id: "towers-list",
@@ -346,9 +428,9 @@ export const kr6Pages: PageContent[] = [
     h1: "Kingdom Rush 6: Genesis TD towers: 15-tower roster and revamped upgrade system",
     seoTitle: "Kingdom Rush 6: Genesis TD Towers: 15 Roster & Upgrade System",
     metaDescription:
-      "Kingdom Rush 6: Genesis TD ships with 15 towers across the 4 classic families (Barracks, Archer, Mage, Artillery) and the revamped upgrade system. Browse the launch-week tower reference.",
+      "Kingdom Rush 6: Genesis TD ships with 15 towers across the 4 classic families (Barracks, Archer, Mage, Artillery) and the revamped upgrade system. Browse all 15 publicly named towers with family tags and lore sources.",
     summary:
-      "15 towers across 4 classic families with the revamped upgrade system. Per-tower DPS and cost numbers are unannounced.",
+      "15 towers across 4 classic families with the revamped upgrade system. Dwarven Culverin is the live balance-watch surface.",
     hero: {
       eyebrow: "Tower roster",
       subtitle:
@@ -360,14 +442,112 @@ export const kr6Pages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Kingdom Rush 6: Genesis TD ships with 15 towers across the 4 classic families (Barracks, Archer, Mage, Artillery) and the revamped upgrade system. Specific per-tower DPS, cost, and exact upgrade path numbers are not announced as of research date.",
+      "Kingdom Rush 6: Genesis TD ships with 15 publicly named towers across the 4 classic families (Barracks, Archer, Mage, Artillery) and the revamped upgrade system. Specific per-tower DPS, cost, and exact upgrade path numbers are not announced as of research date.",
     keyFacts: [
       { label: "Tower count", value: "15 towers" },
       { label: "Families", value: "Barracks / Archer / Mage / Artillery" },
       { label: "Upgrade system", value: "Revamped" },
+      { label: "Balance watch", value: "Dwarven Culverin" },
       { label: "Per-tower numbers", value: "Not announced" },
     ],
     modules: [
+      {
+        id: "named-roster",
+        type: "entity-grid",
+        heading: "The 15 publicly revealed towers",
+        items: [
+          {
+            title: "Archer Garrison",
+            summary: "Basic Archer family tower for steady lane DPS.",
+            badge: "Archer",
+            href: "/towers/",
+          },
+          {
+            title: "Knights Order",
+            summary: "Basic Barracks family tower anchoring the Linirean frontline.",
+            badge: "Barracks",
+            href: "/towers/",
+          },
+          {
+            title: "Royal Catapult",
+            summary: "Basic Artillery family tower for single-target burst.",
+            badge: "Artillery",
+            href: "/towers/",
+          },
+          {
+            title: "Scholar Mage",
+            summary: "Basic Mage family tower from the Stormcloud Sorcerers.",
+            badge: "Mage",
+            href: "/towers/",
+          },
+          {
+            title: "Dwarven Culverin",
+            summary: "Advanced Artillery family tower. Balance watch — community threads flag it as the live balance surface.",
+            badge: "Artillery · Balance watch",
+            href: "/towers/",
+          },
+          {
+            title: "Elven Elite Ranger",
+            summary: "Advanced Archer family tower recruited from the Silveroak rangers.",
+            badge: "Archer",
+            href: "/towers/",
+          },
+          {
+            title: "Wildcat Huntresses",
+            summary: "Advanced Barracks family unit from the Valardul war-cats.",
+            badge: "Barracks",
+            href: "/towers/",
+          },
+          {
+            title: "Ironbark Treant",
+            summary: "Elite Barracks family anchor from the Linirean treants.",
+            badge: "Barracks",
+            href: "/towers/",
+          },
+          {
+            title: "Gold Prospectors",
+            summary: "Elite Barracks family support that pays for itself in gold.",
+            badge: "Barracks",
+            href: "/towers/",
+          },
+          {
+            title: "Sunray Master",
+            summary: "Elite Mage family turret from the Church of Light.",
+            badge: "Mage",
+            href: "/towers/",
+          },
+          {
+            title: "Light Priestess",
+            summary: "Elite Mage family healer from the Church of Light.",
+            badge: "Mage",
+            href: "/towers/",
+          },
+          {
+            title: "Cursed Crossbows",
+            summary: "Elite Archer family turret with a cursed-arc volleypayload.",
+            badge: "Archer",
+            href: "/towers/",
+          },
+          {
+            title: "Alchemist Shack",
+            summary: "Elite Artillery family alchemist firing acid flasks.",
+            badge: "Artillery",
+            href: "/towers/",
+          },
+          {
+            title: "Arcane Forger",
+            summary: "Elite Mage family support from the Arcania Order.",
+            badge: "Mage",
+            href: "/towers/",
+          },
+          {
+            title: "Sentry Watchtower",
+            summary: "Elite Archer family watchtower for long-lane coverage.",
+            badge: "Archer",
+            href: "/towers/",
+          },
+        ],
+      },
       {
         id: "families",
         type: "prose",
@@ -376,25 +556,25 @@ export const kr6Pages: PageContent[] = [
           "Kingdom Rush 6: Genesis TD uses the four classic tower families that have anchored the Ironhide Kingdom Rush series since the 2011 launch — Barracks (frontline melee), Archer (lane DPS), Mage (area-of-effect damage), and Artillery (high single-target burst). The Steam store page lists these family labels verbatim, and the Saving Content Classic Mode article restates the same four families for the Classic Mode run.",
       },
       {
+        id: "balance-watch",
+        type: "prose",
+        heading: "Dwarven Culverin balance-watch note",
+        body:
+          "Community threads on the Steam Community Hub flag Dwarven Culverin as the current balance-watch surface. If the launch build lands over- or under-tuned, expect this tower to receive the first hotfix. Watch the Steam Community Hub under AppID 4259190 for launch-day patch notes before locking a meta around it.",
+      },
+      {
         id: "upgrade-system",
         type: "prose",
         heading: "The revamped upgrade system",
         body:
           "The Ironhide press release on irondune.com describes a revamped upgrade system for Kingdom Rush 6: Genesis TD. The system changes the way players progress each tower across the 18 stages but the exact per-tower upgrade path numbers are not announced as of research date. Treat any third-party guide that lists specific upgrade costs as unverified until it is checked against the launch build or the Steam Community Hub announcements.",
       },
-      {
-        id: "tier-clusters",
-        type: "prose",
-        heading: "Tower tier and best-tower clusters",
-        body:
-          "Series-generic autocomplete clusters — 'kingdom rush best towers,' 'kingdom rush tower tier list,' 'kingdom rush towers ranked' — surface alongside the Kingdom Rush 6: Genesis TD tower cluster. Those queries are series-generic discovery signals, not authoritative Kingdom Rush 6 data. For Kingdom Rush 6: Genesis TD specific tower comparison, watch the Steam Community Hub for the launch-day meta and the post-launch patch notes.",
-      },
     ],
     faqIds: ["kr6-tower-families", "kr6-tower-upgrade", "kr6-tower-meta"],
     relatedPageIds: ["heroes-list", "controls-mechanics", "beginners-guide"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-19",
   },
   {
     id: "campaign-stages",
@@ -515,7 +695,7 @@ export const kr6Pages: PageContent[] = [
       },
     ],
     faqIds: ["kr6-enemy-races", "kr6-enemy-stats"],
-    relatedPageIds: ["bosses-list", "campaign-stages", "wiki-faq"],
+    relatedPageIds: ["bosses-list", "campaign-stages", "wiki"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
     lastReviewed: "2026-09-18",
@@ -574,7 +754,7 @@ export const kr6Pages: PageContent[] = [
       },
     ],
     faqIds: ["kr6-boss-count", "kr6-boss-counter"],
-    relatedPageIds: ["enemies-races", "campaign-stages", "wiki-faq"],
+    relatedPageIds: ["enemies-races", "campaign-stages", "wiki"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
     lastReviewed: "2026-09-18",
@@ -708,7 +888,7 @@ export const kr6Pages: PageContent[] = [
       },
     ],
     faqIds: ["kr6-vs-frontiers", "kr6-vs-origins", "kr6-classic-mode-compare"],
-    relatedPageIds: ["heroes-list", "towers-list", "wiki-faq"],
+    relatedPageIds: ["heroes-list", "towers-list", "wiki"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
     lastReviewed: "2026-09-18",
@@ -725,13 +905,13 @@ export const kr6Pages: PageContent[] = [
     h1: "Kingdom Rush 6: Genesis TD controls and mechanics",
     seoTitle: "Kingdom Rush 6: Genesis TD Controls & Mechanics: Pair, Heroes, Towers",
     metaDescription:
-      "Kingdom Rush 6: Genesis TD uses mouse + partial controller support, hero-pair combat, tower placement and upgrades, and 9 spells. Mechanics scope from the Steam store description.",
+      "Kingdom Rush 6: Genesis TD uses mouse + partial controller support, hero-pair combat, tower placement and upgrades, and 9 named spells. Mechanics scope from the Steam store description.",
     summary:
-      "Mouse + partial controller, hero-pair combat, tower placement and upgrades, and 9 spells. Mechanics scope beyond the Steam store is unannounced.",
+      "Mouse + partial controller, hero-pair combat, tower placement and upgrades, and 9 named spells. Per-spell cooldown and cost numbers are unannounced.",
     hero: {
       eyebrow: "Controls & mechanics",
       subtitle:
-        "Understand the mouse + partial controller flow, hero-pair combat, and the 9 spells.",
+        "Understand the mouse + partial controller flow, hero-pair combat, and the 9 named spells.",
       ctas: [
         { label: "Beginners guide", href: "/beginners-guide/" },
         { label: "Hero roster", href: "/heroes/" },
@@ -739,7 +919,7 @@ export const kr6Pages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Kingdom Rush 6: Genesis TD uses mouse plus Partial Controller Support, a 2-of-12 hero pair-deployment flow per stage, the four-family tower placement + upgrade system, and 9 spells. Specific key bindings and advanced controller mappings are not announced as of research date.",
+      "Kingdom Rush 6: Genesis TD uses mouse plus Partial Controller Support, a 2-of-12 hero pair-deployment flow per stage, the four-family tower placement + upgrade system, and 9 named spells. Specific key bindings, advanced controller mappings, and per-spell cooldown or cost numbers are not announced as of research date.",
     keyFacts: [
       { label: "Input", value: "Mouse + Partial Controller" },
       { label: "Hero flow", value: "Pick 2 of 12 heroes per stage" },
@@ -775,18 +955,82 @@ export const kr6Pages: PageContent[] = [
         ],
       },
       {
+        id: "spell-roster",
+        type: "entity-grid",
+        heading: "The 9 named spells",
+        items: [
+          {
+            title: "Reinforcements",
+            summary: "Summon allied soldiers from the Linirean ranks.",
+            badge: "Classic Mode",
+            href: "/controls/",
+          },
+          {
+            title: "Rain of Fire",
+            summary: "Scorched-earth volley; named in the Classic Mode spell list.",
+            badge: "Classic Mode",
+            href: "/controls/",
+          },
+          {
+            title: "Royal Edict",
+            summary: "Royal decree buff from the Linirean crown.",
+            badge: "Buff",
+            href: "/controls/",
+          },
+          {
+            title: "Gnome's Shop",
+            summary: "Gnomish vendor fires back a surprise support pack.",
+            badge: "Support",
+            href: "/controls/",
+          },
+          {
+            title: "Thunder Zapper",
+            summary: "Lightning zapper from the Stormcloud Sorcerers.",
+            badge: "Storm",
+            href: "/controls/",
+          },
+          {
+            title: "Teleportation Sigil",
+            summary: "Sigil-based tactical reposition for the active lane.",
+            badge: "Utility",
+            href: "/controls/",
+          },
+          {
+            title: "Wintersong's Wrath",
+            summary: "Elora Wintersong's signature winter blast.",
+            badge: "Hero",
+            href: "/controls/",
+          },
+          {
+            title: "Aspect of Sol",
+            summary: "Lightbringer paladin invocation from the Church of Light.",
+            badge: "Holy",
+            href: "/controls/",
+          },
+          {
+            title: "Ace Musketeers",
+            summary: "Linirean gunpowder riflemen called in for a focused volley.",
+            badge: "Volley",
+            href: "/controls/",
+          },
+        ],
+      },
+      {
         id: "spells",
         type: "prose",
         heading: "Spell usage and 9-spell kit",
         body:
-          "The Ironhide press release lists 9 spells for Kingdom Rush 6: Genesis TD. Specific spell names, cooldowns, and damage values are not announced as of research date — treat them as unannounced until the launch build or the Steam Community Hub confirms them.",
+          "Spend the 9 spells on cooldown to soften tough waves and boss encounters. Reinforcements and Rain of Fire are the explicit Classic Mode spells, so they will be available in any Classic Mode run. Per-spell cooldown seconds, gold cost, and damage numbers are not announced as of research date — treat them as unannounced until the launch build or the Steam Community Hub confirms them.",
+        links: [
+          { label: "Beginners guide", href: "/beginners-guide/", description: "Spend the 9 spells on cooldown in the launch-week path." },
+        ],
       },
     ],
     faqIds: ["kr6-controller-support", "kr6-key-bindings", "kr6-spell-cooldown"],
     relatedPageIds: ["beginners-guide", "heroes-list", "towers-list"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-19",
   },
   {
     id: "beginners-guide",
@@ -878,8 +1122,85 @@ export const kr6Pages: PageContent[] = [
     lastReviewed: "2026-09-18",
   },
   {
-    id: "wiki-faq",
-    translationKey: "wiki-faq",
+    id: "guides",
+    translationKey: "guides",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "guides",
+    url: "/guides",
+    pageType: "guides",
+    presentation: { shell: "hub", variant: "card-grid" },
+    h1: "Kingdom Rush 6: Genesis TD guides hub",
+    seoTitle: "Kingdom Rush 6: Genesis TD Guides Hub",
+    metaDescription:
+      "Guide hub for Kingdom Rush 6: Genesis TD. Browse the hero roster, tower roster, controls and mechanics, beginners guide, and campaign stages.",
+    summary:
+      "Launch-week guide hub: heroes, towers, controls, beginners path, and campaign stages.",
+    hero: {
+      eyebrow: "Guides hub",
+      subtitle:
+        "Find the right Kingdom Rush 6: Genesis TD guide for your current question.",
+      ctas: [
+        { label: "Hero roster", href: "/heroes/" },
+        { label: "Tower roster", href: "/towers/" },
+        { label: "Beginners guide", href: "/beginners-guide/" },
+      ],
+    },
+    quickAnswer:
+      "Pick the guide that matches your question: hero roster, tower roster, controls and mechanics, beginners path, or campaign stages.",
+    keyFacts: [
+      { label: "Guides", value: "5 hub guides" },
+      { label: "Latest update", value: "Hero / spell / tower rosters" },
+      { label: "Sources", value: "Steam store + Community Hub" },
+    ],
+    modules: [
+      {
+        id: "guide-list",
+        type: "entity-grid",
+        heading: "Pick a guide",
+        items: [
+          {
+            title: "Hero roster",
+            summary: "12-hero pair-deployment breakdown with the 11 publicly named heroes.",
+            badge: "Heroes",
+            href: "/heroes/",
+          },
+          {
+            title: "Tower roster",
+            summary: "15 towers across the 4 classic families with Dwarven Culverin balance-watch flag.",
+            badge: "Towers",
+            href: "/towers/",
+          },
+          {
+            title: "Controls & mechanics",
+            summary: "Mouse + partial controller, hero-pair flow, tower placement, and the 9 named spells.",
+            badge: "Mechanics",
+            href: "/controls/",
+          },
+          {
+            title: "Beginners guide",
+            summary: "Step-by-step launch-week path: demo, heroes, towers, spells, campaign.",
+            badge: "Onboarding",
+            href: "/beginners-guide/",
+          },
+          {
+            title: "Campaign stages",
+            summary: "18 stages across 3 Linirea regions and Classic Mode framing.",
+            badge: "Campaign",
+            href: "/campaign/",
+          },
+        ],
+      },
+    ],
+    faqIds: [],
+    relatedPageIds: ["heroes-list", "towers-list", "controls-mechanics", "beginners-guide", "campaign-stages"],
+    schemaTypes: ["CollectionPage", "BreadcrumbList"],
+    sourceStatus: "official",
+    lastReviewed: "2026-09-19",
+  },
+  {
+    id: "wiki",
+    translationKey: "wiki",
     locale: "en-US",
     routeKind: "fixed",
     slug: "wiki",

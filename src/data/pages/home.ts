@@ -23,6 +23,7 @@ export const homePage: PageContent = {
       { label: "Release date", href: "/release-date/" },
       { label: "Download demo", href: "/demo/" },
       { label: "Hero roster", href: "/heroes/" },
+      { label: "All guides", href: "/guides/" },
     ],
   },
   quickAnswer:
@@ -109,7 +110,7 @@ export const homePage: PageContent = {
     "controls-mechanics",
     "beginners-guide",
     "vs-frontiers",
-    "wiki-faq",
+    "wiki",
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
   sourceStatus: "official",

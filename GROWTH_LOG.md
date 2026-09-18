@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-19 - Hero, spell, and tower rosters enumerated
+
+- Task: Enumerate the 11 publicly revealed heroes, the 9 named spells, and the 15 publicly named towers on the existing /heroes, /controls, and /towers pages.
+- Files changed: `src/data/pages/kr6-pages.ts`.
+- URLs affected: `/heroes/`, `/controls/`, `/towers/` — content expanded within existing routes.
+- Sources: Steam Community Hub Devlog #27 (Sept 4, 2026) introduced Oni; Devlog #29 'The Full Lineup' revealed Rhodes, Gemina, and Illiana; the Devlog #29 lineup also revealed all 9 spell names and the 15 tower names. Source links are the Steam Community Hub and Steam store page for AppID 4259190.
+- Content changed: Added named-roster `entity-grid` modules to the heroes and towers pages, a 9-spell `entity-grid` module to the controls page, plus short prose modules for the 12th-hero placeholder and the Dwarven Culverin balance-watch note.
+- Verification: `npm run verify` on the target site.
+
 ### 2026-09-18 - Adsterra fixed six-unit integration
 
 - Task: Populate the fixed Native Banner, Banner 728x90, Banner 468x60, Banner 320x50, Banner 160x600, and Smartlink values in `src/data/ads.ts` for the new kingdomrush6genesistd.pro launch.

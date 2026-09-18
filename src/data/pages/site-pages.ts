@@ -48,7 +48,7 @@ export const sitePages: PageContent[] = [
       "kr6-demo",
       "kr6-price",
     ],
-    relatedPageIds: ["wiki-faq", "release-date-status", "demo-download", "about"],
+    relatedPageIds: ["wiki", "release-date-status", "demo-download", "about"],
     schemaTypes: ["FAQPage", "BreadcrumbList"],
     sourceStatus: "internal",
     lastReviewed: "2026-06-18",

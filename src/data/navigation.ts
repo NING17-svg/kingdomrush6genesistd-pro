@@ -7,6 +7,7 @@ export interface LocalizedNavigationItem {
 
 export const primaryNavigation: LocalizedNavigationItem[] = [
   { href: "/release-date/", labels: { "en-US": "Launch & Status" } },
+  { href: "/guides/", labels: { "en-US": "Guides" } },
   { href: "/heroes/", labels: { "en-US": "Roster" } },
   { href: "/campaign/", labels: { "en-US": "Campaign" } },
   { href: "/beginners-guide/", labels: { "en-US": "New Player" } },
