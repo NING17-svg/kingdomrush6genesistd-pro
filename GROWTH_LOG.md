@@ -6,6 +6,14 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-18 - Adsterra fixed six-unit integration
+
+- Task: Populate the fixed Native Banner, Banner 728x90, Banner 468x60, Banner 320x50, Banner 160x600, and Smartlink values in `src/data/ads.ts` for the new kingdomrush6genesistd.pro launch.
+- Files changed: `src/data/ads.ts`.
+- URLs affected: No URL changes; only the empty ad-config placeholders were filled with the platform-issued codes.
+- Ad baseline: Six platform-issued Active ad units are wired into the existing fixed ad slots; no new component or layout added.
+- Verification: `npm run verify` on the target site.
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.
