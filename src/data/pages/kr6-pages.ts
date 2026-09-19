@@ -235,12 +235,16 @@ export const kr6Pages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Yes — the Kingdom Rush 6: Genesis TD Steam Next Fest demo is downloadable from the Steam store page for AppID 4259190 ahead of the planned September 24, 2026 launch. Demo content may differ from the launch build.",
+      "Yes — the Kingdom Rush 6: Genesis TD Steam Next Fest demo is downloadable from the Steam store page for AppID 4669880 ahead of the planned September 24, 2026 launch. The demo ships with 4 stages, 5 towers, 2 heroes (Gerald + Zefira), 3 spells (Reinforcements, Rain of Fire, Royal Edict), and the Iron Challenge mode.",
     keyFacts: [
-      { label: "Demo source", value: "Steam store AppID 4259190" },
+      { label: "Demo source", value: "Steam store AppID 4669880" },
       { label: "Build", value: "Steam Next Fest" },
+      { label: "Stages", value: "4 (of 18 in launch build)" },
+      { label: "Towers", value: "5 (of 15 in launch build)" },
+      { label: "Heroes", value: "Gerald + Zefira (2 of 12)" },
+      { label: "Spells", value: "Reinforcements + Rain of Fire + Royal Edict (3 of 9)" },
+      { label: "Mode", value: "Iron Challenge" },
       { label: "Pre-purchase", value: "Trial remains after launch" },
-      { label: "Content scope", value: "Unannounced for demo" },
     ],
     modules: [
       {
@@ -248,14 +252,62 @@ export const kr6Pages: PageContent[] = [
         type: "prose",
         heading: "How to download the demo",
         body:
-          "Open the Steam store page for Kingdom Rush 6: Genesis TD (AppID 4259190) and look for the Steam Next Fest demo access button on the right rail. Steam demos download through the regular Steam client once the demo is added to your library. The demo is also surfaced through the Steam Next Fest hub on Steam for the duration of the festival window.",
+          "Open the Kingdom Rush 6: Genesis TD Demo store page for AppID 4669880 (or the main AppID 4259190 right-rail during the festival window) and use the Steam Next Fest demo access button. Steam demos install through the regular Steam client once added to your library. The demo is also surfaced through the Steam Next Fest hub on Steam for the duration of the festival window.",
       },
       {
         id: "demo-scope",
         type: "prose",
-        heading: "What to expect from the demo",
+        heading: "What the demo includes",
         body:
-          "The Kingdom Rush 6: Genesis TD demo gives buyers a hands-on look at the pre-launch build before committing to the -30% pre-order. Demo content may differ from the launch build — Ironhide has not announced the exact scope of the demo. Expect early Linirea stages, a slice of the 12-hero pair-deployment roster, and access to the revamped four-family tower upgrade system. The demo remains available as a pre-purchase trial after the planned September 24, 2026 launch.",
+          "The Steam Next Fest demo ships with a curated subset of the launch build: 4 of the 18 stages, 5 of the 15 towers, 2 of the 12 heroes (Gerald and Zefira), 3 of the 9 spells (Reinforcements, Rain of Fire, Royal Edict), and the Iron Challenge mode. Per the Steam demo store page (AppID 4669880) and the Ironhide Jun 15, 2026 gamespress.com release, this is the official pre-purchase trial scope. Use it to confirm the pair-deployment feel, the revamped four-family tower upgrade path, and the Iron Challenge difficulty before committing to the -30% pre-order.",
+      },
+      {
+        id: "demo-subset",
+        type: "entity-grid",
+        heading: "Demo subset at a glance",
+        items: [
+          {
+            title: "4 stages",
+            summary: "4 of the 18 launch stages — early Linirea slice for first-pair placement practice.",
+            badge: "Stages",
+            href: "/campaign/",
+          },
+          {
+            title: "5 towers",
+            summary: "5 of the 15 launch towers across the Barracks, Archer, Mage, and Artillery families.",
+            badge: "Towers",
+            href: "/towers/",
+          },
+          {
+            title: "2 heroes: Gerald + Zefira",
+            summary: "Gerald (Linirean knight anchor) and Zefira (Silveroak archer scout) form the fixed demo pair.",
+            badge: "Heroes",
+            href: "/heroes/",
+          },
+          {
+            title: "3 spells",
+            summary: "Reinforcements, Rain of Fire, and Royal Edict — the demo subset of the 9-spell launch kit.",
+            badge: "Spells",
+            href: "/controls/",
+          },
+          {
+            title: "Iron Challenge mode",
+            summary: "Iron Challenge is the named demo mode; tougher waves on the demo stages.",
+            badge: "Mode",
+            href: "/demo/",
+          },
+        ],
+      },
+      {
+        id: "demo-vs-launch",
+        type: "prose",
+        heading: "Demo vs launch build",
+        body:
+          "The demo is a 4-of-18, 5-of-15, 2-of-12, 3-of-9 slice — early Linirea stages, a tower sample across the 4 classic families, the Gerald + Zefira pair, and a 3-spell subset. The Iron Challenge mode is the demo's named difficulty path. The launch build expands each axis: 18 stages across 3 Linirea regions, 15 towers, the full 12-hero pair-deployment roster, and all 9 spells. Treat the demo as a feel check; treat the Steam store page for AppID 4259190 as the launch-build reference.",
+        links: [
+          { label: "Hero roster", href: "/heroes/", description: "Full 12-hero pair-deployment roster." },
+          { label: "Tower roster", href: "/towers/", description: "All 15 towers across 4 families." },
+        ],
       },
       {
         id: "post-launch",
@@ -263,14 +315,17 @@ export const kr6Pages: PageContent[] = [
         heading: "Post-launch demo status",
         body:
           "After the planned September 24, 2026 launch, the Steam Next Fest demo window closes, but the demo usually remains available as a pre-purchase trial on the Steam store page. If you skip pre-order and want to try before buying, check the live Steam store page near ship day for the post-launch demo availability badge.",
-        links: officialSources,
+        links: [
+          { label: "Steam demo (AppID 4669880)", href: "https://store.steampowered.com/app/4669880/Kingdom_Rush_6_Genesis_TD_Demo/", description: "Official Steam Next Fest demo page." },
+          { label: "Ironhide demo press release", href: "https://www.gamespress.com/IRONHIDE-ANNOUNCES-KINGDOM-RUSH-6-GENESIS-TD-STEAM-DEMO-MOBILE-PRE-ORD", description: "Jun 15, 2026 gamespress.com release restating demo scope." },
+        ],
       },
     ],
     faqIds: ["kr6-demo-link", "kr6-demo-content", "kr6-demo-after-launch"],
     relatedPageIds: ["release-date-status", "price-editions", "platforms-faq"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-20",
   },
   {
     id: "heroes-list",

@@ -45,7 +45,7 @@ export const faqItems: FAQItem[] = [
     id: "kr6-demo-link",
     question: "Where is the Kingdom Rush 6: Genesis TD demo download?",
     answer:
-      "The demo is on the Steam store page for AppID 4259190. Open the store page and use the Steam Next Fest demo access button on the right rail.",
+      "The demo is on the Steam store page for AppID 4669880 (the standalone demo listing) and via the Steam Next Fest demo access button on the main AppID 4259190 right rail. Add it to your Steam library from either entry point.",
     pageIds: ["demo-download"],
     category: "release",
     schemaEligible: true,
@@ -55,7 +55,7 @@ export const faqItems: FAQItem[] = [
     id: "kr6-demo-content",
     question: "What content does the Kingdom Rush 6: Genesis TD demo include?",
     answer:
-      "Demo content scope is unannounced as of research date. Expect early Linirea stages, a slice of the 12-hero pair-deployment roster, and access to the revamped four-family tower upgrade system.",
+      "The Steam Next Fest demo ships with 4 of the 18 launch stages, 5 of the 15 towers, 2 of the 12 heroes (Gerald and Zefira), 3 of the 9 spells (Reinforcements, Rain of Fire, Royal Edict), and the Iron Challenge mode, per the Steam demo store page (AppID 4669880) and the Ironhide Jun 15, 2026 gamespress.com press release.",
     pageIds: ["demo-download"],
     category: "release",
     schemaEligible: true,

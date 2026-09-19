@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-20 - Steam Next Fest demo scope enumerated
+
+- Task: Replace the /demo page's "Unannounced for demo" block and "Iron mode" label with the actual Steam Next Fest demo scope (4 stages, 5 towers, 2 heroes Gerald + Zefira, 3 spells Reinforcements + Rain of Fire + Royal Edict, Iron Challenge mode).
+- Files changed: `src/data/pages/kr6-pages.ts`, `src/data/faq.ts`.
+- URLs affected: `/demo/` — keyFacts, modules, FAQ answers refreshed in place.
+- Sources: Steam demo AppID 4669880 store page; Ironhide Jun 15, 2026 gamespress.com press release; Steam store AppID 4259190 + changelog.gg Classic Mode reference.
+- Content changed: New `demo-subset` entity-grid module, a `demo-vs-launch` prose module with the 4-of-18 / 5-of-15 / 2-of-12 / 3-of-9 framing, corrected mode name to Iron Challenge throughout, FAQ `kr6-demo-content` and `kr6-demo-link` answers restated to the published scope.
+- Verification: `npm run verify` on the target site.
+
 ### 2026-09-19 - Hero, spell, and tower rosters enumerated
 
 - Task: Enumerate the 11 publicly revealed heroes, the 9 named spells, and the 15 publicly named towers on the existing /heroes, /controls, and /towers pages.
