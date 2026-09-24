@@ -6,6 +6,24 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-25 - Known issues & workarounds page added
+
+- Task: Build a new Known Issues & Workarounds page mirroring Ironhide's News/Details/527 post.
+- Files changed: `src/data/pages/kr6-pages.ts`, `src/data/faq.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/known-issues/` (new) and `/wiki/`, `/release-date/`, `/platforms/`, `/price/`, `/system-requirements/`, `/` cross-links updated.
+- Sources: Ironhide News/Details/527 'Known Issues & Workarounds' published 2026-09-23; Steam Community Hub for AppID 4259190.
+- Content changed: New `known-issues` page lists 5 Steam bugs (0kb CD Key patched, 30Hz / VSYNC, screen-resolution, in-stage keybinding, hero drag-line) and 2 mobile bugs (tutorial-bypass, blue-screen save-file crash awaiting hotfix); each Ironhide-confirmed bug has a step-by-step mitigation. Steam Community heading separately tracks ultra-wide 21:9 and first-level crashes until Ironhide acknowledges them. FAQs `kr6-known-issues`, `kr6-known-issues-steam`, `kr6-known-issues-mobile` added.
+- Verification: `npm run verify` on the target site.
+
+### 2026-09-25 - Post-launch status, platforms, and pricing flipped to released
+
+- Task: Flip launch status, platforms, and pricing from pre-launch framing to the Sep 24, 2026 released reality across home, /release-date, /price, /platforms, and /wiki.
+- Files changed: `src/data/pages/home.ts`, `src/data/pages/kr6-pages.ts` (release-date-status, price-editions, platforms-faq, wiki), `src/data/faq.ts`.
+- URLs affected: `/`, `/release-date/`, `/price/`, `/platforms/`, `/wiki/` — keyFacts, modules, metaDescription, quickAnswer, and relatedPageIds refreshed in place.
+- Sources: Steam store AppID 4259190 (Released Sep 24, 2026, $17.99, 10% intro offer ending Oct 8), iOS App Store id6759664029, Google Play com.ironhidegames.android.kingdomrush6.genesis, Ironhide News/Details/523 launch post, Steam Community Hub.
+- Content changed: Home, release-date-status, price-editions, platforms-faq, and wiki pages now quote the $17.99 / 10% intro offer (was $19.99) ending Oct 8, the $6.99 mobile premium with in-app purchases, and the new iOS / Android listings. Console / Steam Deck / Switch remain explicitly unannounced. Existing FAQs updated for the new release / price / platform reality; new known-issues FAQs added.
+- Verification: `npm run verify` on the target site.
+
 ### 2026-09-20 - Steam Next Fest demo scope enumerated
 
 - Task: Replace the /demo page's "Unannounced for demo" block and "Iron mode" label with the actual Steam Next Fest demo scope (4 stages, 5 towers, 2 heroes Gerald + Zefira, 3 spells Reinforcements + Rain of Fire + Royal Edict, Iron Challenge mode).

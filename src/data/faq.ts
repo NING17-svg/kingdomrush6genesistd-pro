@@ -5,7 +5,7 @@ export const faqItems: FAQItem[] = [
     id: "kr6-release-date",
     question: "When does Kingdom Rush 6: Genesis TD launch?",
     answer:
-      "Kingdom Rush 6: Genesis TD is planned to launch on Steam on September 24, 2026, per the Steam store page for AppID 4259190 and the Ironhide press release. Final timing has not shifted from the planned ship date as of research date.",
+      "Kingdom Rush 6: Genesis TD released September 24, 2026 on Steam (AppID 4259190), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis). The Ironhide News/Details/523 launch post quotes 'OUT RIGHT NOW on Google Play, the App Store, and Steam!' as the same-day ship confirmation.",
     pageIds: ["home", "release-date-status", "faq", "about"],
     category: "release",
     schemaEligible: true,
@@ -13,9 +13,9 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: "kr6-release-shift",
-    question: "Will Kingdom Rush 6: Genesis TD release date shift from Sep 24, 2026?",
+    question: "Did the Kingdom Rush 6: Genesis TD release date shift from Sep 24, 2026?",
     answer:
-      "No timing shift has been announced as of research date. The Steam store and SteamDB both list September 24, 2026 as the planned ship date, and the Ironhide press release confirms the same window. Any shift would surface first on the Ironhide newsroom and the Steam Community Hub.",
+      "No. The title released September 24, 2026 on Steam, the iOS App Store, and Google Play as planned. Any future timing shift would surface first on the Ironhide newsroom and the Steam Community Hub.",
     pageIds: ["release-date-status"],
     category: "release",
     schemaEligible: true,
@@ -23,9 +23,9 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: "kr6-ios-android",
-    question: "Is there a Kingdom Rush 6 iOS or Android release date?",
+    question: "Is Kingdom Rush 6: Genesis TD available on iOS and Android?",
     answer:
-      "Not for Kingdom Rush 6: Genesis TD. The Steam launch is the current planned ship. iOS and Android release-date queries autocomplete alongside Kingdom Rush 6 refer to the legacy Kingdom Rush mobile series, a separate Ironhide product line.",
+      "Yes. Kingdom Rush 6: Genesis TD is on the iOS App Store (id6759664029) and Google Play (com.ironhidegames.android.kingdomrush6.genesis) at $6.99 with in-app purchases. The same-day PC + mobile ship on Sep 24, 2026 confirms the new iOS / Android listings are the Genesis TD release, not legacy Kingdom Rush mobile titles.",
     pageIds: ["release-date-status", "platforms-faq"],
     category: "platform",
     schemaEligible: true,
@@ -75,7 +75,7 @@ export const faqItems: FAQItem[] = [
     id: "kr6-price",
     question: "How much does Kingdom Rush 6: Genesis TD cost?",
     answer:
-      "The Steam store page lists the current regional price for Kingdom Rush 6: Genesis TD. Ironhide's published pre-order terms include a -30% launch discount that holds through the planned September 24, 2026 ship; price may change post-launch.",
+      "Steam is $17.99 with a 10% launch intro offer (was $19.99) running through Oct 8, 2026. iOS App Store (id6759664029) and Google Play (com.ironhidegames.android.kingdomrush6.genesis) are $6.99 with in-app purchases. The Steam intro offer is the only active discount; after Oct 8 the price returns to $19.99.",
     pageIds: ["home", "price-editions", "faq"],
     category: "release",
     schemaEligible: true,
@@ -85,7 +85,27 @@ export const faqItems: FAQItem[] = [
     id: "kr6-price-now",
     question: "What is the current Kingdom Rush 6: Genesis TD price?",
     answer:
-      "The current regional price is shown on the live Steam store page for AppID 4259190. Pricing varies by region and currency. Ironhide has published a -30% pre-order launch discount.",
+      "Steam is $17.99 with a 10% launch intro offer (was $19.99) through Oct 8, 2026. Mobile is $6.99 with in-app purchases on both the iOS App Store and Google Play. Regional pricing varies; check the live Steam store page in your region before purchase.",
+    pageIds: ["price-editions"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "kr6-intro-offer",
+    question: "How long does the 10% Steam intro offer last?",
+    answer:
+      "The 10% Steam intro offer runs through Oct 8, 2026 (14 days from release). After Oct 8 the price returns to the standard $19.99 tier. Pre-orders and day-one purchases both fall inside the intro window.",
+    pageIds: ["price-editions"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "kr6-mobile-price",
+    question: "What is the mobile price for Kingdom Rush 6: Genesis TD?",
+    answer:
+      "The iOS App Store (id6759664029) and Google Play (com.ironhidegames.android.kingdomrush6.genesis) listings are $6.99 with in-app purchases. Mobile pricing is separate from the Steam intro offer and is not affected by the Oct 8, 2026 Steam offer window.",
     pageIds: ["price-editions"],
     category: "release",
     schemaEligible: true,
@@ -93,9 +113,9 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: "kr6-preorder-window",
-    question: "How long does the -30% pre-order discount last?",
+    question: "Did the -30% pre-order discount still apply?",
     answer:
-      "Ironhide's published pre-order terms hold the -30% launch discount through the planned September 24, 2026 ship. The discount is expected to expire on the schedule published by Ironhide once the launch build ships.",
+      "The published pre-order discount terms have been replaced by the current 10% Steam launch intro offer (was $19.99) running through Oct 8, 2026. Pre-orders and day-one purchases are inside the new intro window.",
     pageIds: ["price-editions"],
     category: "release",
     schemaEligible: true,
@@ -105,7 +125,7 @@ export const faqItems: FAQItem[] = [
     id: "kr6-editions",
     question: "Are there multiple Kingdom Rush 6: Genesis TD editions?",
     answer:
-      "There is no public edition tier or DLC bundle announced as of research date. The Steam store page lists a single edition at launch.",
+      "There is no public edition tier or DLC bundle announced at launch. The Steam store page lists a single edition at $17.99 with the 10% intro offer; mobile is a $6.99 premium release with in-app purchases.",
     pageIds: ["price-editions"],
     category: "release",
     schemaEligible: true,
@@ -113,9 +133,9 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: "kr6-platforms",
-    question: "Which platforms support Kingdom Rush 6: Genesis TD at launch?",
+    question: "Which platforms support Kingdom Rush 6: Genesis TD?",
     answer:
-      "The Steam store page lists Windows and macOS as the launch platforms, with Partial Controller Support. Steam Deck verification, iOS, Android, and console releases are not announced as of September 18, 2026.",
+      "Kingdom Rush 6: Genesis TD launched September 24, 2026 on Steam (AppID 4259190, Windows + macOS), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis). Steam Deck verification, PlayStation, Xbox, and Switch support are unannounced as of 2026-09-25.",
     pageIds: ["home", "platforms-faq", "faq"],
     category: "platform",
     schemaEligible: true,
@@ -123,9 +143,9 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: "kr6-platforms-launch",
-    question: "What are the launch platforms for Kingdom Rush 6: Genesis TD?",
+    question: "What platforms launched Kingdom Rush 6: Genesis TD?",
     answer:
-      "Windows and macOS only at launch, per the Steam store page for AppID 4259190.",
+      "Steam (Windows + macOS, AppID 4259190), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis) — same-day launch on September 24, 2026.",
     pageIds: ["platforms-faq"],
     category: "platform",
     schemaEligible: true,
@@ -135,7 +155,7 @@ export const faqItems: FAQItem[] = [
     id: "kr6-steam-deck",
     question: "Does Kingdom Rush 6: Genesis TD work on Steam Deck?",
     answer:
-      "Steam Deck verification status is not announced as of 2026-09-18. The modest Windows minimum tier suggests handheld play is feasible, but buyers should wait for a verified badge on the Steam store page before treating Steam Deck support as confirmed.",
+      "Steam Deck verification is unannounced as of 2026-09-25. The modest Windows minimum tier suggests handheld play is feasible, but wait for the verified badge on the Steam store page before treating Steam Deck support as confirmed.",
     pageIds: ["platforms-faq", "system-requirements"],
     category: "platform",
     schemaEligible: true,
@@ -145,7 +165,7 @@ export const faqItems: FAQItem[] = [
     id: "kr6-console",
     question: "Is Kingdom Rush 6: Genesis TD on consoles?",
     answer:
-      "Console support for Kingdom Rush 6: Genesis TD is not announced as of 2026-09-18. The Steam store page lists Windows and macOS as the supported launch platforms. Console hits in launch-week search results typically refer to legacy Kingdom Rush mobile titles or community wishlist pages.",
+      "Console support is unannounced as of 2026-09-25. The Steam store page lists Windows and macOS only and does not list a console badge. PlayStation, Xbox, and Switch hits in launch-week search results typically refer to legacy Kingdom Rush mobile titles or community wishlist pages.",
     pageIds: ["platforms-faq", "system-requirements"],
     category: "platform",
     schemaEligible: true,
@@ -428,6 +448,36 @@ export const faqItems: FAQItem[] = [
       "Classic Mode is the Kingdom Rush 6: Genesis TD take on the 2011 Kingdom Rush formula. It runs the campaign with one hero, the four original tower families, and the Rain of Fire and Reinforcements spells.",
     pageIds: ["vs-frontiers"],
     category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "kr6-known-issues",
+    question: "Does Kingdom Rush 6: Genesis TD have post-launch bugs?",
+    answer:
+      "Yes. Ironhide's News/Details/527 known-issues post lists 5 Steam bugs and 2 mobile bugs with step-by-step workarounds. See our /known-issues page for the full list and the official workaround for each. The authoritative upstream is ironhidegames.com News/Details/527; this page re-stamps from that post on every update.",
+    pageIds: ["home", "wiki", "known-issues", "release-date-status"],
+    category: "wiki",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "kr6-known-issues-steam",
+    question: "What Steam bugs does Kingdom Rush 6: Genesis TD have?",
+    answer:
+      "Ironhide confirms 5 Steam launch bugs: 0kb missing executable / CD Key (already patched), 30Hz / VSYNC stutter, wrong screen-resolution detection, custom keybinding limited to in-stage, and hero drag-line freezing at path corners. Each has a workaround on the /known-issues page.",
+    pageIds: ["known-issues"],
+    category: "wiki",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "kr6-known-issues-mobile",
+    question: "What mobile bugs does Kingdom Rush 6: Genesis TD have?",
+    answer:
+      "Ironhide confirms 2 mobile launch bugs: a tutorial-bypass purchase bug (fixed in the current mobile build by reverting the bypass) and a blue-screen save-file crash that is awaiting a hotfix — do not delete and reinstall the app on a hunch. See the /known-issues page for the full workaround and the Ironhide News/Details/527 source.",
+    pageIds: ["known-issues"],
+    category: "wiki",
     schemaEligible: true,
     sourceStatus: "official",
   },

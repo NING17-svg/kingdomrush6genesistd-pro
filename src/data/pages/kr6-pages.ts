@@ -15,65 +15,65 @@ export const kr6Pages: PageContent[] = [
     pageType: "release",
     presentation: { shell: "content", variant: "reading-right-rail" },
     h1: "Kingdom Rush 6: Genesis TD release date and launch status",
-    seoTitle: "Kingdom Rush 6: Genesis TD Release Date: Sep 24, 2026 Status",
+    seoTitle: "Kingdom Rush 6: Genesis TD Release Date: Released Sep 24, 2026",
     metaDescription:
-      "Kingdom Rush 6: Genesis TD release date is planned for September 24, 2026 on Steam. Check the live pre-launch status, demo availability, and timing notes.",
+      "Kingdom Rush 6: Genesis TD released September 24, 2026 on Steam, iOS App Store, and Google Play. Steam is $17.99 with a 10% intro offer ending Oct 8; mobile is $6.99.",
     summary:
-      "Planned Sep 24, 2026 ship on Steam with pre-order open and a Steam Next Fest demo live. Status as of research date 2026-09-18.",
+      "Released Sep 24, 2026 on Steam + iOS + Android with active post-launch pricing. Status as of research date 2026-09-25.",
     hero: {
       eyebrow: "Launch status",
       subtitle:
-        "Confirm the planned Sep 24, 2026 release, pre-order, and demo availability before buying.",
+        "Confirm the Sep 24, 2026 release across Steam, iOS, and Android, plus current pricing.",
       ctas: [
-        { label: "Demo download", href: "/demo/" },
-        { label: "Price & pre-order", href: "/price/" },
-        { label: "System requirements", href: "/system-requirements/" },
+        { label: "Price & editions", href: "/price/" },
+        { label: "Platforms matrix", href: "/platforms/" },
+        { label: "Known issues", href: "/known-issues/" },
       ],
     },
     quickAnswer:
-      "Kingdom Rush 6: Genesis TD is planned for release on Steam on September 24, 2026, per the Steam store page for AppID 4259190 and the Ironhide press release. As of September 18, 2026 the title is in pre-launch: pre-order is open with a -30% launch discount and the Steam Next Fest demo is downloadable.",
+      "Kingdom Rush 6: Genesis TD released on September 24, 2026 on Steam (AppID 4259190), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis), per the Ironhide News/Details/523 launch post and the live Steam store page. Steam is $17.99 with a 10% intro offer (was $19.99) running through Oct 8, 2026; iOS and Android are $6.99 with in-app purchases.",
     keyFacts: [
-      { label: "Planned release", value: "Sep 24, 2026 (Steam)" },
-      { label: "Pre-order", value: "Open at -30%" },
-      { label: "Demo", value: "Steam Next Fest live" },
-      { label: "Status window", value: "Pre-launch as of 2026-09-18" },
+      { label: "Released", value: "Sep 24, 2026" },
+      { label: "Steam price", value: "$17.99 (10% intro, was $19.99)" },
+      { label: "Intro offer ends", value: "Oct 8, 2026" },
+      { label: "Mobile price", value: "$6.99 + in-app purchases" },
     ],
     modules: [
       {
         id: "ship-date",
         type: "prose",
-        heading: "Planned Sep 24, 2026 ship",
+        heading: "Released Sep 24, 2026 on Steam, iOS, and Android",
         body:
-          "The September 24, 2026 release date is the authoritative planned ship date for Kingdom Rush 6: Genesis TD on Steam. The Steam store page for AppID 4259190 lists Sep 24, 2026 as the planned release date, and SteamDB's AppID 4259190 metadata snapshot mirrors the same date. The Ironhide Kingdom Rush 6: Genesis TD press release on irondune.com confirms the Sep 24 window as the planned launch.",
+          "Kingdom Rush 6: Genesis TD shipped September 24, 2026 across Steam (AppID 4259190), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis). The Steam store now shows 'Released Sep 24, 2026' with 153 reviews (Mixed) and the Ironhide News/Details/523 launch post quotes 'OUT RIGHT NOW on Google Play, the App Store, and Steam!' as the same-day ship confirmation.",
       },
       {
         id: "pre-launch-status",
         type: "prose",
-        heading: "Status as of research date (2026-09-18)",
+        heading: "Current post-launch status (2026-09-25)",
         body:
-          "Kingdom Rush 6: Genesis TD is currently in the pre-launch / pre-order / demo-available window on Steam. Pre-order is open with a -30% launch discount, the Steam Next Fest demo is downloadable from the Steam store page, and the Steam Community Hub for AppID 4259190 is open for launch-day announcements. The Steam store release widget still shows the planned Sep 24, 2026 date, not a final released status.",
+          "As of September 25, 2026 the title is in active post-launch: Steam is $17.99 with a 10% launch intro offer that ends Oct 8, 2026 (was $19.99); the iOS App Store and Google Play listings are $6.99 with in-app purchases. The Steam Community Hub for AppID 4259190 carries day-one player discussions and the Steam launch review tally is 153 reviews at Mixed (56%). Check the Known Issues page for Ironhide's published bug list and workarounds.",
       },
       {
         id: "confirm-live",
         type: "prose",
-        heading: "How to confirm the live release date",
+        heading: "How to confirm the live status yourself",
         body:
-          "Open the Steam store page for AppID 4259190 and look at the right-rail release widget. As of research date the widget shows Sep 24, 2026 as the planned release. SteamDB AppID 4259190 mirrors that date and is the second-best confirmation. Any shift would surface first on the Ironhide newsroom and the Steam Community Hub announcements.",
+          "Open the Steam store page for AppID 4259190 and look at the right-rail release widget. The widget now reads 'Released Sep 24, 2026' rather than the pre-launch placeholder. SteamDB AppID 4259190 mirrors that release state in near real time. For mobile, open the iOS App Store entry id6759664029 or the Google Play entry com.ironhidegames.android.kingdomrush6.genesis and confirm the published price.",
         links: officialSources,
       },
       {
         id: "legacy-mobile",
         type: "prose",
-        heading: "Legacy Kingdom Rush mobile release dates",
+        heading: "Legacy Kingdom Rush mobile titles",
         body:
-          "Some autocomplete clusters surface 'Kingdom Rush 6 mobile release date' or 'Kingdom Rush 6 Android release date.' Those refer to the legacy Kingdom Rush mobile series (the iOS and Android titles Ironhide shipped before the Steam prequel line), not Kingdom Rush 6: Genesis TD. Kingdom Rush 6: Genesis TD ships first on Steam with a Sep 24, 2026 planned ship.",
+          "Some autocomplete clusters still surface 'Kingdom Rush 6 iOS' or 'Kingdom Rush 6 Android' as legacy Kingdom Rush mobile searches. Those point at the older Kingdom Rush mobile series Ironhide shipped before the Genesis TD prequel. Kingdom Rush 6: Genesis TD is the new 2026 mobile entry at $6.99 with in-app purchases; legacy mobile titles are a separate product line.",
       },
     ],
-    faqIds: ["kr6-release-date", "kr6-release-shift", "kr6-ios-android"],
-    relatedPageIds: ["demo-download", "price-editions", "system-requirements", "platforms-faq"],
+    faqIds: ["kr6-release-date", "kr6-ios-android", "kr6-known-issues"],
+    relatedPageIds: ["price-editions", "platforms-faq", "known-issues"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-25",
   },
   {
     id: "system-requirements",
@@ -141,10 +141,10 @@ export const kr6Pages: PageContent[] = [
       },
     ],
     faqIds: ["kr6-windows-11", "kr6-old-mac", "kr6-console", "kr6-steam-deck", "kr6-storage"],
-    relatedPageIds: ["release-date-status", "price-editions", "platforms-faq"],
+    relatedPageIds: ["release-date-status", "price-editions", "platforms-faq", "known-issues"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-25",
   },
   {
     id: "price-editions",
@@ -155,28 +155,29 @@ export const kr6Pages: PageContent[] = [
     url: "/price",
     pageType: "release",
     presentation: { shell: "content", variant: "reading-right-rail" },
-    h1: "Kingdom Rush 6: Genesis TD Steam price and pre-order terms",
-    seoTitle: "Kingdom Rush 6: Genesis TD Price & Pre-Order: -30% Launch Discount",
+    h1: "Kingdom Rush 6: Genesis TD Steam price and mobile editions",
+    seoTitle: "Kingdom Rush 6: Genesis TD Price: $17.99 Steam, $6.99 Mobile",
     metaDescription:
-      "Kingdom Rush 6: Genesis TD price is shown live on the Steam store page. Pre-order -30% launch discount is published by Ironhide; check the live Steam regional price before buying.",
+      "Kingdom Rush 6: Genesis TD is $17.99 on Steam with a 10% intro offer ending Oct 8, 2026 (was $19.99). iOS and Android are $6.99 with in-app purchases.",
     summary:
-      "Live Steam regional price with -30% launch pre-order discount. Price may change post-launch; check the live Steam store before purchase.",
+      "Steam $17.99 with a 10% intro offer ending Oct 8, 2026; iOS and Android $6.99 with in-app purchases. Confirm the live Steam regional price before buying.",
     hero: {
-      eyebrow: "Price & pre-order",
+      eyebrow: "Price & editions",
       subtitle:
-        "Confirm the live Steam regional price and Ironhide's -30% pre-order launch discount.",
+        "Confirm the current Steam regional price and the mobile $6.99 premium with in-app purchases.",
       ctas: [
         { label: "Release date", href: "/release-date/" },
-        { label: "Demo download", href: "/demo/" },
-        { label: "System requirements", href: "/system-requirements/" },
+        { label: "Platforms matrix", href: "/platforms/" },
+        { label: "Known issues", href: "/known-issues/" },
       ],
     },
     quickAnswer:
-      "The Steam store page lists the current regional price for Kingdom Rush 6: Genesis TD. Ironhide's published pre-order terms include a -30% launch discount that holds through the planned September 24, 2026 ship; price may change post-launch.",
+      "Kingdom Rush 6: Genesis TD is $17.99 on Steam with a 10% launch intro offer (was $19.99) running through Oct 8, 2026, and $6.99 on iOS App Store (id6759664029) and Google Play (com.ironhidegames.android.kingdomrush6.genesis) with in-app purchases. Confirm the live Steam regional price before purchase — final pricing varies by region and currency.",
     keyFacts: [
-      { label: "Price source", value: "Live Steam store page" },
-      { label: "Pre-order", value: "-30% launch discount" },
-      { label: "Discount window", value: "Through planned Sep 24, 2026 ship" },
+      { label: "Steam price", value: "$17.99 (10% intro, was $19.99)" },
+      { label: "Intro offer ends", value: "Oct 8, 2026" },
+      { label: "iOS price", value: "$6.99 + in-app purchases" },
+      { label: "Android price", value: "$6.99 + in-app purchases" },
       { label: "Editions", value: "Single Steam edition at launch" },
     ],
     modules: [
@@ -185,29 +186,40 @@ export const kr6Pages: PageContent[] = [
         type: "prose",
         heading: "Live Steam regional price",
         body:
-          "The Steam store page for Kingdom Rush 6: Genesis TD lists the current regional price as the authoritative source. Final regional pricing varies by Steam region and currency. The Ironhide press release on irondune.com restates the pre-order discount terms but does not list specific regional prices — always check the live Steam store page in your region before purchase.",
+          "The Steam store page for Kingdom Rush 6: Genesis TD (AppID 4259190) now shows $17.99 with a 10% launch intro offer (was $19.99) running through Oct 8, 2026. Final regional pricing varies by Steam region and currency — open the Steam store page in your region before purchase to confirm the displayed price.",
       },
       {
         id: "preorder",
         type: "prose",
-        heading: "Pre-order -30% launch discount",
+        heading: "Steam intro offer window",
         body:
-          "Ironhide's published pre-order terms include a -30% launch discount that holds through the planned September 24, 2026 ship. Pre-order is open on the Steam store page for AppID 4259190. Once the title launches, the discount is expected to expire on the schedule published by Ironhide; price may change post-launch. There is no public edition tier or DLC bundle announced as of research date.",
+          "The 10% launch intro offer on Steam runs through Oct 8, 2026 (14 days from release). After Oct 8 the price returns to the standard $19.99 tier. There is no separate pre-order tier; pre-orders are open at the $17.99 intro price through the offer window. The Ironhide press release on irondune.com restates the intro offer terms. There is no public edition tier or DLC bundle announced at launch.",
+      },
+      {
+        id: "mobile-price",
+        type: "prose",
+        heading: "iOS and Android pricing",
+        body:
+          "The iOS App Store (id6759664029) and Google Play (com.ironhidegames.android.kingdomrush6.genesis) listings are $6.99 with in-app purchases. Mobile users pay the $6.99 base price for the Genesis TD premium release; the in-app purchase catalog is the same across iOS and Android. Mobile pricing is separate from the Steam intro offer and is not affected by the Oct 8, 2026 Steam offer window.",
+        links: [
+          { label: "iOS App Store listing", href: "https://apps.apple.com/us/app/kingdom-rush-6-genesis-td/id6759664029", description: "Official iOS listing at $6.99 + IAP." },
+          { label: "Google Play listing", href: "https://play.google.com/store/apps/details?id=com.ironhidegames.android.kingdomrush6.genesis", description: "Official Android listing at $6.99 + IAP." },
+        ],
       },
       {
         id: "verify",
         type: "prose",
         heading: "Verify the live Steam price before buying",
         body:
-          "Before purchase, open the Steam store page in your region and confirm the displayed price, the pre-order discount badge, and the planned Sep 24, 2026 release widget. If the price has changed between this page and the live Steam listing, the live Steam store is authoritative. SteamDB AppID 4259190 mirrors package-level pricing but does not replace the regional store view.",
+          "Before purchase, open the Steam store page in your region and confirm the displayed price, the 10% intro offer badge, and the 'Released Sep 24, 2026' release widget. If the price has changed between this page and the live Steam listing, the live Steam store is authoritative. SteamDB AppID 4259190 mirrors package-level pricing but does not replace the regional store view.",
         links: officialSources,
       },
     ],
-    faqIds: ["kr6-price-now", "kr6-preorder-window", "kr6-editions"],
-    relatedPageIds: ["release-date-status", "demo-download", "system-requirements"],
+    faqIds: ["kr6-price-now", "kr6-intro-offer", "kr6-mobile-price", "kr6-editions"],
+    relatedPageIds: ["release-date-status", "platforms-faq", "known-issues"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-25",
   },
   {
     id: "demo-download",
@@ -823,60 +835,66 @@ export const kr6Pages: PageContent[] = [
     url: "/platforms",
     pageType: "release",
     presentation: { shell: "content", variant: "reading-right-rail" },
-    h1: "Kingdom Rush 6: Genesis TD platforms: Windows, macOS, and the legacy mobile line",
-    seoTitle: "Kingdom Rush 6: Genesis TD Platforms: Windows, macOS & Legacy Mobile",
+    h1: "Kingdom Rush 6: Genesis TD platforms: Steam, iOS, Android, and console status",
+    seoTitle: "Kingdom Rush 6: Genesis TD Platforms: Steam, iOS, Android",
     metaDescription:
-      "Kingdom Rush 6: Genesis TD launches on Windows and macOS on Steam. Steam Deck verification, console, iOS, and Android support are not announced as of research date.",
+      "Kingdom Rush 6: Genesis TD released Sep 24, 2026 on Steam (Windows + macOS), the iOS App Store, and Google Play. Steam Deck verification, PlayStation, Xbox, and Switch are unannounced.",
     summary:
-      "Windows and macOS only at launch. iOS, Android, console, and Steam Deck verification are not announced; legacy Kingdom Rush mobile titles are a separate product line.",
+      "Released on Steam (Windows + macOS), iOS App Store, and Google Play. Steam Deck verification, PlayStation, Xbox, and Switch support are unannounced.",
     hero: {
       eyebrow: "Platform matrix",
       subtitle:
-        "Clarify Windows, macOS, and the legacy Kingdom Rush mobile series before buying.",
+        "Confirm the Steam, iOS, and Android launch matrix and what's still unannounced for console and Steam Deck.",
       ctas: [
         { label: "Release date", href: "/release-date/" },
-        { label: "System requirements", href: "/system-requirements/" },
-        { label: "Demo download", href: "/demo/" },
+        { label: "Price & editions", href: "/price/" },
+        { label: "Known issues", href: "/known-issues/" },
       ],
     },
     quickAnswer:
-      "Kingdom Rush 6: Genesis TD launches on Windows and macOS only, per the Steam store page for AppID 4259190. Steam Deck verification, console, iOS, and Android support are not announced as of research date. iOS and Android release-date queries refer to the legacy Kingdom Rush mobile series, a separate Ironhide product line.",
+      "Kingdom Rush 6: Genesis TD launched September 24, 2026 on Steam (Windows + macOS, AppID 4259190), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis). Steam Deck verification, PlayStation, Xbox, and Switch support are not announced. Search hits for 'Kingdom Rush 6 iOS' or 'Kingdom Rush 6 Android' return the new Genesis TD listing — not legacy Kingdom Rush mobile titles.",
     keyFacts: [
-      { label: "Launch platforms", value: "Windows + macOS" },
-      { label: "Steam Deck", value: "Verification not announced" },
-      { label: "Console", value: "Not announced" },
-      { label: "iOS / Android", value: "Refers to legacy mobile series" },
-      { label: "Controller", value: "Partial Controller Support" },
+      { label: "Released platforms", value: "Steam (Win/macOS), iOS, Android" },
+      { label: "Steam Deck", value: "Verification unannounced" },
+      { label: "PlayStation", value: "Unannounced" },
+      { label: "Xbox", value: "Unannounced" },
+      { label: "Switch", value: "Unannounced" },
+      { label: "Controller", value: "Partial Controller Support on Steam" },
     ],
     modules: [
       {
         id: "launch-platforms",
         type: "prose",
-        heading: "Launch platforms: Windows and macOS",
+        heading: "Released: Steam + iOS + Android",
         body:
-          "The Steam store page for Kingdom Rush 6: Genesis TD (AppID 4259190) lists Windows and macOS as the launch platforms. The Steam store also lists Partial Controller Support and Steam Achievements. Steam Cloud and Family Sharing are listed in the Steam store tags for the title. Buyers looking for Kingdom Rush 6 on PlayStation, Xbox, or Switch should treat those results as legacy Kingdom Rush mobile titles, not the current Steam release.",
+          "Kingdom Rush 6: Genesis TD launched the same day, Sep 24, 2026, across Steam (AppID 4259190, Windows + macOS), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis). The Ironhide News/Details/523 launch post quotes 'OUT RIGHT NOW on Google Play, the App Store, and Steam!' confirming the same-day PC + mobile ship. Steam listings show Partial Controller Support and Steam Achievements.",
+        links: [
+          { label: "Steam store page", href: "https://store.steampowered.com/app/4259190/Kingdom_Rush_6_Genesis_TD/", description: "Released Sep 24, 2026 on Windows + macOS." },
+          { label: "iOS App Store", href: "https://apps.apple.com/us/app/kingdom-rush-6-genesis-td/id6759664029", description: "$6.99 with in-app purchases." },
+          { label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.ironhidegames.android.kingdomrush6.genesis", description: "$6.99 with in-app purchases." },
+        ],
       },
       {
         id: "legacy-mobile",
         type: "prose",
         heading: "Legacy Kingdom Rush mobile titles",
         body:
-          "The 'kingdom rush 6 ios' autocomplete cluster refers to the legacy Kingdom Rush mobile series — the iOS and Android titles Ironhide shipped before the Steam prequel line. Kingdom Rush 6: Genesis TD on Steam is a separate product line from the mobile legacy; the Steam launch is the planned September 24, 2026 ship on Windows and macOS. If a reader asks about Kingdom Rush 6 on iOS or Android, point them at the mobile legacy product line.",
+          "Some autocomplete clusters surface 'Kingdom Rush 6 iOS' or 'Kingdom Rush 6 Android' as legacy Kingdom Rush mobile searches. With Genesis TD now shipped, those searches return the new iOS App Store and Google Play listings (id6759664029 and com.ironhidegames.android.kingdomrush6.genesis) above any older Kingdom Rush mobile entries. Legacy Kingdom Rush mobile titles remain a separate Ironhide product line.",
       },
       {
         id: "deck-console",
         type: "prose",
-        heading: "Steam Deck and console status",
+        heading: "Steam Deck, PlayStation, Xbox, and Switch: unannounced",
         body:
-          "Steam Deck verification status for Kingdom Rush 6: Genesis TD is not announced as of 2026-09-18. Console support for PlayStation, Xbox, and Switch is not announced as of 2026-09-18. The Steam store page does not list a console badge. Given the modest Windows minimum tier and the controller-friendly input model, Steam Deck handheld play is feasible but unverified.",
+          "Steam Deck verification status for Kingdom Rush 6: Genesis TD is not announced. Console support for PlayStation, Xbox, and Switch is not announced; the Steam store page does not list a console badge. Given the modest Windows minimum tier and the Partial Controller Support flag, Steam Deck handheld play is feasible but unverified — wait for the verified badge on the Steam store before buying for Steam Deck. Console releases will surface first on the Ironhide newsroom and the Steam Community Hub announcements.",
         links: officialSources,
       },
     ],
-    faqIds: ["kr6-platforms-launch", "kr6-ios-android", "kr6-steam-deck", "kr6-controller"],
-    relatedPageIds: ["release-date-status", "system-requirements", "demo-download"],
+    faqIds: ["kr6-platforms-launch", "kr6-ios-android", "kr6-steam-deck", "kr6-console", "kr6-controller"],
+    relatedPageIds: ["release-date-status", "price-editions", "known-issues"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-25",
   },
   {
     id: "vs-frontiers",
@@ -1262,29 +1280,29 @@ export const kr6Pages: PageContent[] = [
     url: "/wiki",
     pageType: "wiki",
     presentation: { shell: "hub", variant: "card-grid" },
-    h1: "Kingdom Rush 6: Genesis TD wiki: launch-week community FAQ surface",
-    seoTitle: "Kingdom Rush 6: Genesis TD Wiki: Launch-Week Community FAQ",
+    h1: "Kingdom Rush 6: Genesis TD wiki: launch-week FAQ and known issues hub",
+    seoTitle: "Kingdom Rush 6: Genesis TD Wiki: Launch FAQ & Known Issues",
     metaDescription:
-      "Kingdom Rush 6: Genesis TD does not yet have a third-party wiki. The launch-week FAQ surface is the Steam Community Hub, r/KingdomRush, and the Ironhide newsroom.",
+      "Kingdom Rush 6: Genesis TD launched Sep 24, 2026. The launch FAQ surface is the Steam Community Hub, r/KingdomRush, the Ironhide newsroom, and our Known Issues page.",
     summary:
-      "No third-party wiki yet. The launch-week FAQ surface is the Steam Community Hub, r/KingdomRush, and the Ironhide newsroom.",
+      "Launch FAQ surface: Steam Community Hub, r/KingdomRush, Ironhide newsroom, and our Known Issues page.",
     hero: {
       eyebrow: "Wiki & FAQ hub",
       subtitle:
-        "Find the launch-week FAQ surface for Kingdom Rush 6: Genesis TD.",
+        "Find the launch FAQ surface for Kingdom Rush 6: Genesis TD and the published known-issues list.",
       ctas: [
         { label: "Release date", href: "/release-date/" },
+        { label: "Known issues", href: "/known-issues/" },
         { label: "Hero roster", href: "/heroes/" },
-        { label: "Tower roster", href: "/towers/" },
       ],
     },
     quickAnswer:
-      "No third-party Kingdom Rush 6: Genesis TD wiki has indexed the title yet. The launch-week FAQ surface is the Steam Community Hub for AppID 4259190, the r/KingdomRush subreddit, and the Ironhide newsroom on irondune.com.",
+      "Kingdom Rush 6: Genesis TD launched September 24, 2026 on Steam (AppID 4259190), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis). The launch FAQ surface is the Steam Community Hub, the r/KingdomRush subreddit, the Ironhide newsroom, and our /known-issues page that summarizes Ironhide's News/Details/527 bug list.",
     keyFacts: [
-      { label: "Third-party wiki", value: "Not yet indexed" },
+      { label: "Launched", value: "Sep 24, 2026 (Steam + iOS + Android)" },
       { label: "Steam hub", value: "AppID 4259190" },
       { label: "Reddit", value: "r/KingdomRush" },
-      { label: "Newsroom", value: "irondune.com / Ironhide" },
+      { label: "Newsroom", value: "Ironhide News/Details/523 + 527" },
     ],
     modules: [
       {
@@ -1292,19 +1310,20 @@ export const kr6Pages: PageContent[] = [
         type: "prose",
         heading: "Primary FAQ surfaces",
         body:
-          "The launch-week Kingdom Rush 6: Genesis TD FAQ surface is the Steam Community Hub for AppID 4259190, the r/KingdomRush subreddit, and the Ironhide newsroom on irondune.com. The Steam Community Hub carries launch-day player discussions, screenshots, and update announcements. r/KingdomRush carries community-demand signals and ambiguity disambiguation. The Ironhide newsroom carries official press releases and timing-shift announcements.",
+          "The launch Kingdom Rush 6: Genesis TD FAQ surface is the Steam Community Hub for AppID 4259190, the r/KingdomRush subreddit, the Ironhide newsroom (News/Details/523 launch post and News/Details/527 known-issues post), and our internal /known-issues page that mirrors Ironhide's published bug list.",
         links: [
           { label: "Steam Community Hub", href: "https://steamcommunity.com/app/4259190", description: "Launch-day player discussions." },
           { label: "r/KingdomRush", href: "https://www.reddit.com/r/KingdomRush/", description: "Community demand signals." },
-          { label: "Ironhide newsroom", href: "https://www.irondune.com/news/kingdom-rush-6-genesis-td-official-press-release", description: "Official press releases." },
+          { label: "Ironhide launch post", href: "https://www.ironhidegames.com/News/Details/523", description: "Official Sep 24, 2026 launch confirmation." },
+          { label: "Ironhide known-issues post", href: "https://www.ironhidegames.com/News/Details/527", description: "Authoritative known-issues list." },
         ],
       },
       {
         id: "wiki-status",
         type: "prose",
-        heading: "Wiki status as of research date",
+        heading: "Third-party wiki status",
         body:
-          "As of research date (2026-09-18) no third-party wiki has indexed Kingdom Rush 6: Genesis TD. Treat any third-party wiki claim that lists specific hero HP, ability numbers, or post-launch roadmap as unverified — Ironhide has not published those numbers. Use the Steam store page and the Ironhide press release as the authoritative sources for current-game facts.",
+          "No third-party wiki has fully indexed Kingdom Rush 6: Genesis TD as of 2026-09-25. Treat any third-party wiki claim that lists specific hero HP, ability numbers, or post-launch roadmap as unverified until Ironhide or the Steam Community Hub confirms them. Use the Steam store page, the iOS / Android listings, and the Ironhide newsroom as the authoritative sources for current-game facts.",
       },
       {
         id: "topic-pointers",
@@ -1313,16 +1332,160 @@ export const kr6Pages: PageContent[] = [
         body:
           "For specific topics, follow the relevant internal page rather than the third-party wiki gaps:",
         links: [
-          { label: "Release date status", href: "/release-date/", description: "Sep 24, 2026 ship confirmation." },
+          { label: "Release date status", href: "/release-date/", description: "Sep 24, 2026 launch confirmation." },
+          { label: "Known issues", href: "/known-issues/", description: "Ironhide's post-launch bug list and workarounds." },
           { label: "Hero roster", href: "/heroes/", description: "12-hero pair-deployment roster." },
           { label: "Tower roster", href: "/towers/", description: "15 towers + revamped upgrade system." },
         ],
       },
     ],
-    faqIds: ["kr6-wiki-status", "kr6-faq-surface"],
-    relatedPageIds: ["release-date-status", "heroes-list", "towers-list", "vs-frontiers"],
+    faqIds: ["kr6-wiki-status", "kr6-faq-surface", "kr6-known-issues"],
+    relatedPageIds: ["release-date-status", "known-issues", "heroes-list", "towers-list", "vs-frontiers"],
     schemaTypes: ["CollectionPage", "BreadcrumbList", "FAQPage"],
     sourceStatus: "internal",
-    lastReviewed: "2026-09-18",
+    lastReviewed: "2026-09-25",
+  },
+  {
+    id: "known-issues",
+    translationKey: "known-issues",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "known-issues",
+    url: "/known-issues",
+    pageType: "wiki",
+    presentation: { shell: "content", variant: "reading-right-rail" },
+    h1: "Kingdom Rush 6: Genesis TD known issues and workarounds",
+    seoTitle: "Kingdom Rush 6: Genesis TD Known Issues & Workarounds",
+    metaDescription:
+      "Day-one known issues for Kingdom Rush 6: Genesis TD on Steam and mobile, plus Ironhide's published workarounds. Last updated 2026-09-25.",
+    summary:
+      "Last updated 2026-09-25. Ironhide's News/Details/527 lists 5 Steam bugs and 2 mobile bugs with workarounds; player-reported Steam Community issues are tracked separately.",
+    hero: {
+      eyebrow: "Known issues",
+      subtitle:
+        "Post-launch bugs Ironhide has acknowledged, the official workaround for each, and the player-reported Steam Community surface.",
+      ctas: [
+        { label: "Release date", href: "/release-date/" },
+        { label: "Steam Community Hub", href: "https://steamcommunity.com/app/4259190" },
+        { label: "Ironhide known-issues post", href: "https://www.ironhidegames.com/News/Details/527" },
+      ],
+    },
+    quickAnswer:
+      "Ironhide's News/Details/527 lists 5 Steam bugs (0kb CD Key reset, 30Hz / VSYNC stutter, screen-resolution detection, custom keybinding limited to in-stage, hero drag-line freezing at path corners) and 2 mobile bugs (tutorial-bypass purchase bug, blue-screen save-file crash awaiting hotfix). Each Ironhide-confirmed bug has a step-by-step workaround below. Player-reported Steam Community issues (ultra-wide 21:9 unsupported, first-level crashes) are tracked in a separate section until Ironhide acknowledges them.",
+    keyFacts: [
+      { label: "Last updated", value: "2026-09-25" },
+      { label: "Source", value: "Ironhide News/Details/527" },
+      { label: "Steam bugs", value: "5 Ironhide-confirmed" },
+      { label: "Mobile bugs", value: "2 (1 awaiting hotfix)" },
+      { label: "Player-reported", value: "Steam Community threads" },
+    ],
+    modules: [
+      {
+        id: "steam-bugs",
+        type: "prose",
+        heading: "Steam bugs (Ironhide-confirmed)",
+        body:
+          "Ironhide has published step-by-step workarounds for the 5 launch-window Steam bugs below. The 0kb CD Key issue is already patched in the launch build; the others require a player-side action until a hotfix ships.",
+      },
+      {
+        id: "steam-0kb-cdkey",
+        type: "prose",
+        heading: "0kb missing executable / CD Key",
+        body:
+          "Some Steam installs report a 0kb executable or an empty CD Key field at launch. Ironhide has patched this in the launch build; if you still see the issue, restart Steam (right-click the Steam tray icon → Exit, then relaunch) so the client re-validates the build, then verify the game files via Steam → Properties → Installed Files → Verify. This was the highest-visibility launch bug and is fixed for the majority of installs.",
+      },
+      {
+        id: "steam-30hz-vsync",
+        type: "prose",
+        heading: "30Hz display stutter / VSYNC fix",
+        body:
+          "Players on 30Hz displays (or laptops running at a capped refresh rate) report input lag and frame stutter. Close any active frame cap or VSYNC override in your GPU control panel (NVIDIA Control Panel, AMD Software, Intel Arc Control) and set the in-game display to the native panel rate. The launch build defaults VSYNC to ON; if your panel is 30Hz, leave VSYNC on. If stutter persists, edit the in-game settings file to force a fixed 30 FPS cap until the next hotfix.",
+      },
+      {
+        id: "steam-resolution",
+        type: "prose",
+        heading: "Wrong screen-resolution detection",
+        body:
+          "On some multi-monitor setups the launch build picks the wrong primary display and renders the window at an off-screen resolution. Quit the game, delete the `settings.lua` and `global.lua` files from `%USERPROFILE%\\AppData\\LocalLow\\Ironhide\\Kingdom Rush 6 Genesis TD\\` (Windows) or `~/Library/Application Support/Ironhide/Kingdom Rush 6 Genesis TD/` (macOS), and relaunch. The game rebuilds fresh config files and re-detects your primary display.",
+      },
+      {
+        id: "steam-keybinding",
+        type: "prose",
+        heading: "Custom keybinding limited to in-stage",
+        body:
+          "Custom keybindings currently persist only for the active stage and reset on return to the world map. Ironhide has confirmed the limitation; a hotfix is expected to make bindings persistent across stages. As a workaround, rebind keys at the start of each stage until the hotfix lands, and track your preferred layout in a note app.",
+      },
+      {
+        id: "steam-drag-line",
+        type: "prose",
+        heading: "Hero drag-line freeze at path corners",
+        body:
+          "If a hero's drag-line (the live movement indicator) freezes at a lane corner, click anywhere on the lane to clear the path indicator, then reissue the move order. Ironhide has flagged this as a known UI rendering issue; the underlying hero pathing still works, only the visual indicator gets stuck.",
+      },
+      {
+        id: "mobile-bugs",
+        type: "prose",
+        heading: "Mobile bugs (Ironhide-confirmed)",
+        body:
+          "Two mobile bugs are confirmed in the News/Details/527 post. The tutorial-bypass purchase bug is fixable in-app; the blue-screen save-file crash is awaiting a hotfix.",
+      },
+      {
+        id: "mobile-tutorial-bypass",
+        type: "prose",
+        heading: "Mobile tutorial-bypass purchase bug",
+        body:
+          "Some iOS and Android users report being able to skip the in-game tutorial while the store prompts for a starter pack purchase. Ironhide has confirmed the bug and reverted the bypass in the current mobile build — the tutorial is mandatory again until the next mobile hotfix. If you already skipped the tutorial, the regular campaign walkthrough remains available from the world map.",
+      },
+      {
+        id: "mobile-blue-screen",
+        type: "prose",
+        heading: "Mobile blue-screen save-file crash (awaiting hotfix)",
+        body:
+          "Some iOS and Android users report a blue-screen crash on launch that wipes the local save file. Ironhide has acknowledged the bug in News/Details/527 but a fix is not yet in the current mobile build. Do not delete and reinstall the app on a hunch — that compounds the save-loss. Wait for the next mobile hotfix and back up your campaign progress via the in-game cloud-sync option if it is available.",
+      },
+      {
+        id: "community-issues",
+        type: "prose",
+        heading: "Steam Community player-reported issues",
+        body:
+          "Two Steam Community threads have surfaced repeatedly in launch-day discussions. Ironhide has not formally acknowledged either one yet; they are tracked here so players can find the active threads and add corroborating reports.",
+      },
+      {
+        id: "community-ultrawide",
+        type: "prose",
+        heading: "Ultra-wide 21:9 unsupported",
+        body:
+          "Players on 21:9 ultra-wide monitors report letterboxed rendering or stretched HUD. The launch build targets 16:9 and 16:10; 21:9 is not in the verified list. Try a 16:9 virtual resolution via your GPU control panel or wait for a HUD-scaling patch. Track the active Steam Community thread under AppID 4259190 for the latest player workaround notes.",
+        links: [
+          { label: "Steam Community Hub", href: "https://steamcommunity.com/app/4259190", description: "Player-reported issues and threads." },
+        ],
+      },
+      {
+        id: "community-first-level-crash",
+        type: "prose",
+        heading: "First-level crashes on Steam",
+        body:
+          "Some Steam players report hard crashes on the first campaign stage. The launch build's 0kb CD Key fix has reduced but not eliminated these reports; remaining instances tend to coincide with overlay software (Discord, MSI Afterburner, RTSS) injecting into the launch process. Disable overlay software and any frame-capture overlays, relaunch Steam, and retry the first stage. Report reproducible crashes on the Steam Community Hub so Ironhide can capture logs.",
+        links: [
+          { label: "Steam Community Hub", href: "https://steamcommunity.com/app/4259190", description: "Report reproducible crash logs." },
+        ],
+      },
+      {
+        id: "patch-watch",
+        type: "prose",
+        heading: "How to track the next patch",
+        body:
+          "The authoritative upstream for every bug and workaround on this page is Ironhide's News/Details/527 post. Re-stamp this page from that post when Ironhide publishes updates; the Steam Community Hub for AppID 4259190 carries the day-of patch announcements and the official Steam patch notes. We do not invent bugs the research did not enumerate; only entries with concrete public evidence appear above.",
+        links: [
+          { label: "Ironhide News/Details/527", href: "https://www.ironhidegames.com/News/Details/527", description: "Authoritative upstream for known issues." },
+          { label: "Steam Community Hub", href: "https://steamcommunity.com/app/4259190", description: "Day-of patch announcements." },
+        ],
+      },
+    ],
+    faqIds: ["kr6-known-issues", "kr6-known-issues-steam", "kr6-known-issues-mobile"],
+    relatedPageIds: ["release-date-status", "platforms-faq", "system-requirements", "wiki"],
+    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+    sourceStatus: "official",
+    lastReviewed: "2026-09-25",
   },
 ];

@@ -10,31 +10,31 @@ export const homePage: PageContent = {
   url: "/",
   pageType: "home",
   presentation: { shell: "home", variant: "split-panel" },
-  h1: "Kingdom Rush 6: Genesis TD Launch Hub: Status, Demo, and Roster",
-  seoTitle: "Kingdom Rush 6: Genesis TD Launch Hub: Status, Demo & Roster",
+  h1: "Kingdom Rush 6: Genesis TD Launch Hub: Released, Platforms, and Roster",
+  seoTitle: "Kingdom Rush 6: Genesis TD Launch Hub: Released, Platforms & Roster",
   metaDescription:
-    "Plan for Kingdom Rush 6: Genesis TD: Sep 24, 2026 release, Steam Next Fest demo, -30% pre-order, Windows and macOS support, plus the 12-hero roster.",
+    "Kingdom Rush 6: Genesis TD launched Sep 24, 2026 on Steam, iOS App Store, and Google Play. Steam price $17.99 (10% intro offer ending Oct 8); mobile $6.99 with in-app purchases.",
   summary:
-    "A first-launch reference hub for Kingdom Rush 6: Genesis TD — release status, demo and pre-order paths, platform matrix, and roster reference points for the launch week.",
+    "Launch-week reference hub for Kingdom Rush 6: Genesis TD — release status, Steam + mobile pricing, platform matrix, and roster reference points.",
   hero: {
-    eyebrow: "Launch week hub",
+    eyebrow: "Launch hub",
     subtitle: site.tagline,
     ctas: [
       { label: "Release date", href: "/release-date/" },
-      { label: "Download demo", href: "/demo/" },
-      { label: "Hero roster", href: "/heroes/" },
-      { label: "All guides", href: "/guides/" },
+      { label: "Price", href: "/price/" },
+      { label: "Platforms", href: "/platforms/" },
+      { label: "Known issues", href: "/known-issues/" },
     ],
   },
   quickAnswer:
-    "Kingdom Rush 6: Genesis TD launches on Steam on September 24, 2026, with pre-orders open and a Steam Next Fest demo live ahead of ship day. The Ironhide tower-defense prequel pairs a 12-hero roster with the revamped four-family tower upgrade system across 18 stages in three Linirea regions.",
+    "Kingdom Rush 6: Genesis TD released on September 24, 2026 on Steam (Windows + macOS), the iOS App Store, and Google Play. Steam is $17.99 with a 10% launch intro offer ending Oct 8, 2026 (was $19.99); iOS and Android are $6.99 with in-app purchases. The Ironhide tower-defense prequel ships with a 12-hero pair-deployment roster and a revamped four-family tower upgrade system across 18 stages in three Linirea regions.",
   keyFacts: [
-    { label: "Planned release", value: "Sep 24, 2026 (Steam)" },
-    { label: "Pre-order", value: "-30% launch discount" },
-    { label: "Demo", value: "Steam Next Fest live" },
-    { label: "Platforms", value: "Windows + macOS" },
-    { label: "Heroes", value: "12 epic heroes, pair-deploy" },
-    { label: "Towers", value: "15 towers, 4 families" },
+    { label: "Released", value: "Sep 24, 2026 (Steam + iOS + Android)" },
+    { label: "Steam price", value: "$17.99 (10% intro, was $19.99)" },
+    { label: "Intro offer", value: "Ends Oct 8, 2026" },
+    { label: "Mobile price", value: "$6.99 + in-app purchases" },
+    { label: "Platforms", value: "Steam, iOS, Android" },
+    { label: "Steam reviews", value: "153 (Mixed)" },
   ],
   modules: [
     {
@@ -42,12 +42,12 @@ export const homePage: PageContent = {
       type: "prose",
       heading: "Launch & Status",
       body:
-        "The September 24, 2026 release date is set on the Steam store page for AppID 4259190 and confirmed in the Ironhide press release on irondune.com. As of September 18, 2026 the title is in pre-launch: the Steam store lists pre-order with a -30% launch discount, the Steam Next Fest demo is downloadable, and the Steam Community Hub is open for launch-day announcements.",
+        "Kingdom Rush 6: Genesis TD is out on Steam (AppID 4259190), the iOS App Store (id6759664029), and Google Play (com.ironhidegames.android.kingdomrush6.genesis). The Ironhide News/Details/523 launch post confirms the same-day PC + mobile ship. Steam is $17.99 with a 10% launch intro offer (was $19.99) running through Oct 8, 2026; iOS and Android are $6.99 with in-app purchases. The Steam Community Hub for AppID 4259190 is the day-one surface for bugs and balance notes.",
       links: [
-        { label: "Release date status", href: "/release-date/", description: "Confirm the planned Sep 24, 2026 ship." },
-        { label: "Demo download", href: "/demo/", description: "Access the Steam Next Fest build." },
-        { label: "Price and pre-order", href: "/price/", description: "Live Steam regional price and pre-order terms." },
-        { label: "Platforms matrix", href: "/platforms/", description: "Windows vs macOS vs the legacy mobile series." },
+        { label: "Release date status", href: "/release-date/", description: "Confirm the Sep 24, 2026 launch across PC and mobile." },
+        { label: "Price and editions", href: "/price/", description: "Live Steam regional price and mobile premium." },
+        { label: "Platforms matrix", href: "/platforms/", description: "Steam vs iOS vs Android vs unannounced consoles." },
+        { label: "Known issues", href: "/known-issues/", description: "Ironhide's post-launch bug list and workarounds." },
       ],
     },
     {
@@ -96,12 +96,12 @@ export const homePage: PageContent = {
       ],
     },
   ],
-  faqIds: ["kr6-release-date", "kr6-demo", "kr6-price", "kr6-platforms"],
+  faqIds: ["kr6-release-date", "kr6-price", "kr6-platforms", "kr6-known-issues"],
   relatedPageIds: [
     "release-date-status",
-    "demo-download",
     "price-editions",
     "platforms-faq",
+    "known-issues",
     "heroes-list",
     "towers-list",
     "campaign-stages",
@@ -114,5 +114,5 @@ export const homePage: PageContent = {
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
   sourceStatus: "official",
-  lastReviewed: "2026-09-18",
+  lastReviewed: "2026-09-25",
 };
