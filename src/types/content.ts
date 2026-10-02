@@ -30,7 +30,7 @@ export interface KeyFact {
 }
 
 export type PagePresentation =
-  | { shell: "home"; variant?: HomeVariant }
+  | { shell: "home"; variant?: HomeVariant; supplementary?: "expanded" | "collapsed" }
   | { shell: "hub"; variant?: HubVariant }
   | { shell: "content"; variant?: ContentVariant }
   | { shell: "workspace"; variant?: WorkspaceVariant };
@@ -65,6 +65,7 @@ export interface PageContent {
     assetId?: string;
   };
   quickAnswer: string;
+  quickAnswerContext?: string;
   keyFacts: KeyFact[];
   modules: GuideModule[];
   faqIds: string[];

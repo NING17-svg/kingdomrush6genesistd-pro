@@ -1,4 +1,6 @@
 export interface LocaleUiLabels {
+  wikiNavigation?: string;
+  homeDetails?: string;
   searchOpen: string;
   searchClose: string;
   searchPlaceholder: string;
@@ -8,6 +10,8 @@ export interface LocaleUiLabels {
   searchNoResults: string;
   recentUpdates: string;
   lastReviewed: string;
+  onThisPage?: string;
+  answerContext?: string;
 }
 
 export interface SiteLocaleConfig {

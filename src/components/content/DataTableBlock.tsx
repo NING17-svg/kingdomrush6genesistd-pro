@@ -1,4 +1,5 @@
 import type { DataTableModule } from "@/types/modules";
+import { RichText } from "@/components/content/RichText";
 
 export function DataTableBlock({ guideModule }: { guideModule: DataTableModule }) {
   return (
@@ -19,7 +20,7 @@ export function DataTableBlock({ guideModule }: { guideModule: DataTableModule }
             {guideModule.rows.map((row, rowIndex) => (
               <tr key={`${guideModule.id}-row-${rowIndex}`}>
                 {guideModule.columns.map((column) => (
-                  <td key={column.key}>{row[column.key] || "—"}</td>
+                  <td key={column.key}><RichText text={row[column.key] || "—"} inline /></td>
                 ))}
               </tr>
             ))}

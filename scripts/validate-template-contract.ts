@@ -4,7 +4,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { buildSitemapEntries } from "../src/app/sitemap";
 import { AssetMedia } from "../src/components/media/AssetMedia";
-import { PageHero } from "../src/components/pages/PageHero";
+import { PageRenderer } from "../src/components/pages/PageRenderer";
 import {
   generateStaticParams as generateSearchIndexStaticParams,
 } from "../src/app/search-index/[locale]/route";
@@ -101,7 +101,7 @@ const wranglerSource = readFileSync(resolve(process.cwd(), "wrangler.jsonc"), "u
 const staticHeadersSource = readFileSync(resolve(process.cwd(), "public/_headers"), "utf8");
 const globalStylesSource = readFileSync(resolve(process.cwd(), "src/app/globals.css"), "utf8");
 const headerSource = readFileSync(
-  resolve(process.cwd(), "src/components/layout/Header.tsx"),
+  resolve(process.cwd(), "src/components/strategy/StrategyFrame.tsx"),
   "utf8",
 );
 const searchDialogSource = readFileSync(
@@ -180,9 +180,9 @@ if (wranglerSource.includes('"main"') || wranglerSource.includes('"binding": "AS
 if (
   headerSource.includes("buildSearchIndex") ||
   headerSource.includes("entries={") ||
-  !headerSource.includes("indexUrl={getSearchIndexUrl(locale)}")
+  !headerSource.includes("indexUrl={getSearchIndexUrl(page.locale)}")
 ) {
-  fail("Header must not serialize the full search index into initial page props");
+  fail("StrategyFrame must lazy-load the locale search index without serializing it into page props");
 }
 if (
   searchDialogSource.includes("entries: SearchIndexEntry[]") ||
@@ -195,8 +195,8 @@ if (
     "SearchDialog must lazy-load a static locale index, render navigable results, and localize loading/error states",
   );
 }
-if (!globalStylesSource.includes(".site-header {\n  position: relative;\n  z-index: 20;")) {
-  fail("site header must stack above page content so search results remain clickable");
+if (!/\.site-search\s*\{[^}]*position:\s*relative;[^}]*z-index:\s*10(?:;|\})/.test(globalStylesSource)) {
+  fail("V4 search container must stack above page content so results remain clickable");
 }
 if (
   !searchRouteSource.includes('dynamic = "force-static"') ||
@@ -236,43 +236,64 @@ if (filledAdUnits.length > 0 && filledAdUnits.length !== expectedAdUnitKeys.leng
 }
 
 const componentRoot = resolve(process.cwd(), "src/components");
-const adLayoutSources = {
-  adSlot: readFileSync(resolve(componentRoot, "ads/AdSlot.tsx"), "utf8"),
-  home: readFileSync(resolve(componentRoot, "pages/HomePage.tsx"), "utf8"),
-  hub: readFileSync(resolve(componentRoot, "pages/HubPage.tsx"), "utf8"),
-  content: readFileSync(resolve(componentRoot, "pages/ContentPage.tsx"), "utf8"),
-  workspace: readFileSync(resolve(componentRoot, "pages/WorkspacePage.tsx"), "utf8"),
-  rightRail: readFileSync(resolve(componentRoot, "layout/RightRail.tsx"), "utf8"),
-  footer: readFileSync(resolve(componentRoot, "layout/Footer.tsx"), "utf8"),
-};
-if (adLayoutSources.adSlot.includes("srcDoc") || adLayoutSources.adSlot.includes("sandbox=")) {
+const adSlotSource = readFileSync(resolve(componentRoot, "ads/AdSlot.tsx"), "utf8");
+const pageRendererSource = readFileSync(resolve(componentRoot, "pages/PageRenderer.tsx"), "utf8");
+const strategyHomeSource = readFileSync(resolve(componentRoot, "strategy/StrategyHome.tsx"), "utf8");
+const strategyArticleSource = readFileSync(
+  resolve(componentRoot, "strategy/StrategyArticle.tsx"),
+  "utf8",
+);
+const strategyFrameSource = readFileSync(
+  resolve(componentRoot, "strategy/StrategyFrame.tsx"),
+  "utf8",
+);
+if (adSlotSource.includes("srcDoc") || adSlotSource.includes("sandbox=")) {
   fail("Adsterra code must run in the page container, not in sandboxed srcDoc iframes");
 }
-if (!adLayoutSources.adSlot.includes("appendExecutableAdMarkup")) {
+if (!adSlotSource.includes("appendExecutableAdMarkup")) {
   fail("Adsterra component must preserve executable script injection");
 }
-for (const shell of ["home", "hub", "content", "workspace"] as const) {
-  if (!adLayoutSources[shell].includes('<AdSlot placement="responsive-banner" />')) {
-    fail(`${shell} shell must include the responsive banner slot`);
+if (!strategyHomeSource.includes('<AdSlot placement="responsive-banner" />')) {
+  fail("StrategyHome must preserve the responsive banner hook");
+}
+if (!strategyArticleSource.includes('<AdSlot placement="responsive-banner"')) {
+  fail("StrategyArticle must preserve the responsive banner hook");
+}
+if (!strategyFrameSource.includes('<AdSlot placement="right-rail" />')) {
+  fail("StrategyFrame must preserve the right-rail slot");
+}
+if (!strategyFrameSource.includes("<Smartlink />")) {
+  fail("StrategyFrame must preserve the Smartlink hook");
+}
+const leadingModules = strategyArticleSource.indexOf("<ArticleModules modules={leadingModules}");
+const nativeBanner = strategyArticleSource.indexOf('<AdSlot placement="native-banner"/>');
+const remainingModules = strategyArticleSource.indexOf(
+  "<ArticleModules modules={remainingModules}",
+);
+if (!(leadingModules >= 0 && leadingModules < nativeBanner && nativeBanner < remainingModules)) {
+  fail("StrategyArticle must place the Native Banner after the original first two modules");
+}
+if (
+  !pageRendererSource.includes("StrategyFrame") ||
+  !pageRendererSource.includes("StrategyHome") ||
+  !pageRendererSource.includes("StrategyArticle")
+) {
+  fail("PageRenderer must route home and article pages through the V4 strategy entrypoints");
+}
+for (const obsoletePath of [
+  "pages/HomePage.tsx",
+  "pages/HubPage.tsx",
+  "pages/ContentPage.tsx",
+  "pages/WorkspacePage.tsx",
+  "pages/PageHero.tsx",
+  "layout/PageShell.tsx",
+  "layout/Header.tsx",
+  "layout/Footer.tsx",
+  "layout/RightRail.tsx",
+]) {
+  if (existsSync(resolve(componentRoot, obsoletePath))) {
+    fail(`obsolete visual shell remains in use: src/components/${obsoletePath}`);
   }
-}
-if (!adLayoutSources.rightRail.includes('<AdSlot placement="right-rail" />')) {
-  fail("right rail must include the 160x600 slot");
-}
-if (!adLayoutSources.footer.includes("<Smartlink />")) {
-  fail("footer must include the Smartlink hook");
-}
-const firstModules = adLayoutSources.content.indexOf(
-  "<ModuleRenderer modules={leadingModules} />",
-);
-const nativeBanner = adLayoutSources.content.indexOf(
-  '<AdSlot placement="native-banner" />',
-);
-const remainingModules = adLayoutSources.content.indexOf(
-  "<ModuleRenderer modules={remainingModules} />",
-);
-if (!(firstModules >= 0 && firstModules < nativeBanner && nativeBanner < remainingModules)) {
-  fail("content shell must place the Native Banner after module 2");
 }
 
 for (const [token, value] of Object.entries(theme.tokens)) {
@@ -529,16 +550,16 @@ for (const page of getAllPages()) {
   }
 }
 
-const heroFixturePage = getAllPages().find((page) => page.id === "guides");
-if (!heroFixturePage) fail("guide fixture page is missing for review-date rendering validation");
-const pageHeroMarkup = renderToStaticMarkup(
-  createElement(PageHero, { page: heroFixturePage }),
+const reviewFixturePage = getAllPages().find((page) => page.id === "guides");
+if (!reviewFixturePage) fail("guide fixture page is missing for review-date rendering validation");
+const reviewedPageMarkup = renderToStaticMarkup(
+  createElement(PageRenderer, { page: reviewFixturePage }),
 );
 if (
-  !pageHeroMarkup.includes(site.locales[0].ui.lastReviewed) ||
-  !pageHeroMarkup.includes(`dateTime="${heroFixturePage.lastReviewed}"`)
+  !reviewedPageMarkup.includes(site.locales[0].ui.lastReviewed) ||
+  !reviewedPageMarkup.includes(`dateTime="${reviewFixturePage.lastReviewed}"`)
 ) {
-  fail("PageHero does not visibly render the locale-aware lastReviewed date");
+  fail("V4 rendered page does not visibly render the locale-aware lastReviewed date");
 }
 
 const searchPages = getIndexablePages();

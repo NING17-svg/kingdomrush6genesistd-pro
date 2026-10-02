@@ -1,48 +1,27 @@
 import type { ThemeConfig } from "@/types/theme";
 
-// Linirea Heraldry — parchment-grounded light theme.
-// Royal Linirea blue primary, heraldic gold secondary, Vez'nan's crimson accent (boss / caution only).
+// Kingdom Rush's blue banners, gold trim and bright hand-drawn battlefields.
+// This is the site's own design; it is not a shared V4 preset.
 export const theme = {
   mode: "light",
+  navigation: "wiki-sidebar",
   tokens: {
-    pageBg: "#F4ECD8",
-    surface1: "#FFFBF0",
-    surface2: "#EFE5CB",
-    surface3: "#E2D3A8",
-    surfaceInverse: "#1B2540",
-    textPrimary: "#2A2419",
-    textMuted: "#6F5F44",
-    textInverse: "#FBF6E8",
-    textOnAccentPrimary: "#FFFFFF",
-    textLink: "#2B4F95",
-    focusRing: "#C28E1A",
-    line: "#CFB988",
-    lineStrong: "#8C6E2A",
-    accentPrimary: "#2B4F95",
-    accentSecondary: "#C28E1A",
-    accentBright: "#B23A48",
-    statusConfirmed: "#2F7D4F",
-    statusCaution: "#C28E1A",
-    statusUnknown: "#6F5F44",
+    pageBg: "#F0F4F8", surface1: "#FFFFFF", surface2: "#E9EFF5",
+    surface3: "#D9E3EE", surfaceInverse: "#182F4E",
+    textPrimary: "#1B3049", textMuted: "#53657B", textInverse: "#FFFFFF",
+    textOnAccentPrimary: "#FFFFFF", textLink: "#205AA0", focusRing: "#9A5510",
+    line: "#D7E1EB", lineStrong: "#758BA6",
+    accentPrimary: "#245E9B", accentSecondary: "#9A5510", accentBright: "#AE431F",
+    statusConfirmed: "#287244", statusCaution: "#9A5510", statusUnknown: "#53657B",
   },
   typography: {
-    headingFamily: "'Cinzel', 'Trajan Pro', 'Times New Roman', serif",
-    bodyFamily: "'Inter', 'Helvetica Neue', system-ui, sans-serif",
-    headingWeight: 800,
+    headingFamily: "'Bree Serif', Georgia, serif",
+    bodyFamily: "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    headingWeight: 700,
   },
-  shape: {
-    radius: "6px",
-    borderWidth: "1px",
-    shadow: "0 1px 2px rgba(42, 36, 25, 0.08), 0 4px 12px rgba(42, 36, 25, 0.06)",
-    hoverLift: "2px",
-  },
+  shape: { radius: "10px", borderWidth: "1px", shadow: "0 4px 18px rgba(24,47,78,.05)", hoverLift: "0px" },
   density: "comfortable",
-  background: { mode: "solid", overlay: 0, position: "center top" },
-  variants: {
-    home: "split-panel",
-    hub: "card-grid",
-    content: "reading-right-rail",
-    workspace: "panelled",
-  },
-  decoration: { motif: "lines", intensity: "low" },
+  background: { mode: "solid", overlay: 0, position: "center" },
+  variants: { home: "visual-cover", hub: "grouped-list", content: "wide-reference", workspace: "full-width" },
+  decoration: { motif: "none", intensity: "low" },
 } satisfies ThemeConfig;

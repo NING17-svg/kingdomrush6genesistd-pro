@@ -10,8 +10,8 @@ export const homePage: PageContent = {
   url: "/",
   pageType: "home",
   presentation: { shell: "home", variant: "split-panel" },
-  h1: "Kingdom Rush 6: Genesis TD Launch Hub: Released, Platforms, and Roster",
-  seoTitle: "Kingdom Rush 6: Genesis TD Launch Hub: Released, Platforms & Roster",
+  h1: "Kingdom Rush 6: Genesis TD",
+  seoTitle: "Kingdom Rush 6: Genesis TD Guides, Heroes & Towers",
   metaDescription:
     "Kingdom Rush 6: Genesis TD launched Sep 24, 2026 on Steam, iOS App Store, and Google Play. Steam price $17.99 (10% intro offer ending Oct 8); mobile $6.99 with in-app purchases.",
   summary:

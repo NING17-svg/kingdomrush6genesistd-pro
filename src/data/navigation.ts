@@ -1,33 +1,17 @@
 import { site } from "@/data/site";
-
 export interface LocalizedNavigationItem {
   href: string;
   labels: Record<string, string>;
+  children?: LocalizedNavigationItem[];
 }
-
+const item = (href: string, label: string): LocalizedNavigationItem => ({ href, labels: { "en-US": label } });
 export const primaryNavigation: LocalizedNavigationItem[] = [
-  { href: "/release-date/", labels: { "en-US": "Launch & Status" } },
-  { href: "/guides/", labels: { "en-US": "Guides" } },
-  { href: "/heroes/", labels: { "en-US": "Roster" } },
-  { href: "/campaign/", labels: { "en-US": "Campaign" } },
-  { href: "/beginners-guide/", labels: { "en-US": "New Player" } },
-  { href: "/vs-frontiers/", labels: { "en-US": "Series" } },
+  { ...item("/heroes", "Heroes, towers & spells"), children: [item("/heroes", "Heroes"), item("/towers", "Towers"), item("/controls#spell-roster", "Spells")] },
+  { ...item("/campaign", "Campaign & encounters"), children: [item("/campaign", "Campaign"), item("/enemies", "Enemies"), item("/bosses", "Bosses")] },
+  { ...item("/beginners-guide", "Getting started"), children: [item("/beginners-guide", "Beginner guide"), item("/controls", "Controls & mechanics"), item("/known-issues", "Known issues"), item("/guides", "All guides")] },
+  { ...item("/wiki", "Game information"), children: [item("/release-date", "Release status"), item("/demo", "Demo"), item("/price", "Price & editions"), item("/platforms", "Platforms"), item("/system-requirements", "System requirements"), item("/vs-frontiers", "Compared with Frontiers"), item("/wiki", "Wiki & FAQ"), item("/faq", "FAQ")] },
 ];
-
-export const footerNavigation: LocalizedNavigationItem[] = [
-  { href: "/about", labels: { "en-US": "About" } },
-  { href: "/contact", labels: { "en-US": "Contact" } },
-  { href: "/privacy-policy", labels: { "en-US": "Privacy" } },
-  { href: "/terms", labels: { "en-US": "Terms" } },
-];
-
-export function navigationLabel(
-  item: LocalizedNavigationItem,
-  locale: string,
-): string {
-  return (
-    item.labels[locale] ||
-    item.labels[site.primaryLocale] ||
-    Object.values(item.labels)[0]
-  );
+export const footerNavigation: LocalizedNavigationItem[] = [item("/about", "About"), item("/contact", "Contact"), item("/privacy-policy", "Privacy"), item("/terms", "Terms")];
+export function navigationLabel(item: LocalizedNavigationItem, locale: string) {
+  return item.labels[locale] || item.labels[site.primaryLocale] || Object.values(item.labels)[0];
 }

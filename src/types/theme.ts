@@ -1,7 +1,7 @@
 export const themeModes = ["light", "dark", "mixed"] as const;
 export type ThemeMode = (typeof themeModes)[number];
 
-export const homeVariants = ["split-panel", "media-hero"] as const;
+export const homeVariants = ["split-panel", "media-hero", "guide-portal", "visual-cover", "reference-desk"] as const;
 export const hubVariants = ["card-grid", "grouped-list", "compact-index"] as const;
 export const contentVariants = [
   "reading-right-rail",
@@ -39,6 +39,7 @@ export interface ThemeTokens {
 
 export interface ThemeConfig {
   mode: ThemeMode;
+  navigation?: "header" | "wiki-sidebar";
   tokens: ThemeTokens;
   typography: {
     headingFamily: string;

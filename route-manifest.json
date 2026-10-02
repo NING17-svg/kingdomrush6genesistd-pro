@@ -1,0 +1,222 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "beginners-guide",
+    "translationKey": "beginners-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/beginners-guide",
+    "alternates": {
+      "en-US": "/beginners-guide"
+    }
+  },
+  {
+    "id": "bosses-list",
+    "translationKey": "bosses-list",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/bosses",
+    "alternates": {
+      "en-US": "/bosses"
+    }
+  },
+  {
+    "id": "campaign-stages",
+    "translationKey": "campaign-stages",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/campaign",
+    "alternates": {
+      "en-US": "/campaign"
+    }
+  },
+  {
+    "id": "contact",
+    "translationKey": "contact",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/contact",
+    "alternates": {
+      "en-US": "/contact"
+    }
+  },
+  {
+    "id": "controls-mechanics",
+    "translationKey": "controls-mechanics",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/controls",
+    "alternates": {
+      "en-US": "/controls"
+    }
+  },
+  {
+    "id": "demo-download",
+    "translationKey": "demo-download",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/demo",
+    "alternates": {
+      "en-US": "/demo"
+    }
+  },
+  {
+    "id": "enemies-races",
+    "translationKey": "enemies-races",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/enemies",
+    "alternates": {
+      "en-US": "/enemies"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "guides",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides",
+    "alternates": {
+      "en-US": "/guides"
+    }
+  },
+  {
+    "id": "heroes-list",
+    "translationKey": "heroes-list",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/heroes",
+    "alternates": {
+      "en-US": "/heroes"
+    }
+  },
+  {
+    "id": "known-issues",
+    "translationKey": "known-issues",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/known-issues",
+    "alternates": {
+      "en-US": "/known-issues"
+    }
+  },
+  {
+    "id": "platforms-faq",
+    "translationKey": "platforms-faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/platforms",
+    "alternates": {
+      "en-US": "/platforms"
+    }
+  },
+  {
+    "id": "price-editions",
+    "translationKey": "price-editions",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/price",
+    "alternates": {
+      "en-US": "/price"
+    }
+  },
+  {
+    "id": "privacy-policy",
+    "translationKey": "privacy-policy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/privacy-policy",
+    "alternates": {
+      "en-US": "/privacy-policy"
+    }
+  },
+  {
+    "id": "release-date-status",
+    "translationKey": "release-date-status",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release-date",
+    "alternates": {
+      "en-US": "/release-date"
+    }
+  },
+  {
+    "id": "system-requirements",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "terms",
+    "translationKey": "terms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/terms",
+    "alternates": {
+      "en-US": "/terms"
+    }
+  },
+  {
+    "id": "towers-list",
+    "translationKey": "towers-list",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/towers",
+    "alternates": {
+      "en-US": "/towers"
+    }
+  },
+  {
+    "id": "vs-frontiers",
+    "translationKey": "vs-frontiers",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/vs-frontiers",
+    "alternates": {
+      "en-US": "/vs-frontiers"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "wiki",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/wiki",
+    "alternates": {
+      "en-US": "/wiki"
+    }
+  }
+]

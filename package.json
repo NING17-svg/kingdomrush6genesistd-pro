@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "validate:template": "tsx scripts/validate-template-contract.ts",
+    "validate:template": "tsx --tsconfig scripts/tsconfig.tests.json scripts/validate-template-contract.ts",
+    "validate:v4-migration": "tsx --tsconfig scripts/tsconfig.tests.json scripts/validate-v4-migration.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "validate:rendered-seo": "tsx scripts/validate-rendered-seo.ts",
     "validate:indexnow": "tsx scripts/test-indexnow.ts",
@@ -21,7 +22,9 @@
   "dependencies": {
     "next": "15.5.18",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

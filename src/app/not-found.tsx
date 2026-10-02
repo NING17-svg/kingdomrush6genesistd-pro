@@ -1,19 +1,7 @@
 import Link from "next/link";
-import { PageShell } from "@/components/layout/PageShell";
-import { site } from "@/data/site";
-
+import { StrategyFrame } from "@/components/strategy/StrategyFrame";
+import { getPageByUrl } from "@/lib/content";
 export default function NotFound() {
-  return (
-    <PageShell locale={site.primaryLocale}>
-      <section className="not-found-page">
-        <p className="eyebrow">404</p>
-        <h1>Page Not Found</h1>
-        <p>The requested page is not part of this guide template.</p>
-        <Link className="btn" href="/">
-          Back to Home
-        </Link>
-      </section>
-    </PageShell>
-  );
+  const page = getPageByUrl("/about")!;
+  return <StrategyFrame page={page}><section className="strategy-article"><p>404</p><h1>Page not found</h1><p>This guide could not be found.</p><Link href="/">Back to the guide</Link></section></StrategyFrame>;
 }
-

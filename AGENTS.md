@@ -23,7 +23,8 @@ A growth-relevant task is not complete until `GROWTH_LOG.md` is updated.
 ## Site Structure Rules
 
 - Content source of truth is `src/data/pages/*.ts`, `src/data/entities.ts`, `src/data/faq.ts`, `src/data/site.ts`, and `src/data/navigation.ts`.
-- Page shell selection is stored in each page's `presentation.shell`; shell components live in `src/components/pages/`, and shared guide modules are defined in `src/types/modules.ts` and rendered by `src/components/content/ModuleRenderer.tsx`.
+- Page content and module identity live in `src/data`; visible route composition enters through `src/components/pages/PageRenderer.tsx` and may use site-owned compositions in `src/components/strategy/`. The current V4 homepage, article, and frame assemble the shared content modules without changing their source data.
+- Verbatim shared V4 component files copied from the central game-guide template are listed with source SHA and file hashes in `V4_COMPONENTS.json`. Site-owned page composition and CSS are intentionally excluded from that manifest. Custom entity-grid presentations must retain the source module ID and every source item.
 - Make visual-theme changes in `src/data/theme.ts`, not in route-specific CSS.
 - Keep visual assets local under `public/` and register every used asset with complete traceability in `src/data/assets.ts`.
 - Do not use official game logos.
@@ -47,6 +48,7 @@ A growth-relevant task is not complete until `GROWTH_LOG.md` is updated.
 ## Technical SEO Notes
 
 - `npm run validate:template` is mandatory after theme, asset, page-shell, or guide-module changes.
+- `npm run validate:v4-migration` checks route/content preservation, rendered module anchors and metadata, homepage links, and removal of the former visual shell.
 - `npm run validate:content` checks page count, URLs, FAQ references, and related-page references.
 - `npm run validate:rendered-seo` checks sitemap, canonical metadata, hreflang/x-default, route-manifest alignment, FAQ schema, robots alignment, GA4/Bing wiring, and the fixed AdSense ownership trio.
 - `npm run indexnow:submit -- --submit --site-url https://example.com --url https://example.com/changed-page` submits only the live URLs changed by the current update. It prints one line and a remote submission failure does not roll back or block an otherwise verified publish.
@@ -66,8 +68,8 @@ A growth-relevant task is not complete until `GROWTH_LOG.md` is updated.
 - `CONTENT_INDEX.md`: page inventory and page-level SEO/GEO/conversion map.
 - `GROWTH_LOG.md`: chronological growth-relevant change log.
 
-## Shared guide Worker deployment
-
-User-authorized on 2026-10-01: this site's production domain kingdomrush6genesistd.pro is served by Worker `armorsim-wiki` in `guide-pool-06`, at most 10 guide sites per Worker. `.shared-worker.json` is the authoritative deployment mapping; the deployment repository is `NING17-svg/game-guide-pool-06`. This deployment exception overrides older instructions that infer an independent Worker from this source repository or require assets-only for the shared deployment entry. Retain this source site's own build configuration and functionality.
-
 Keep content, canonical URLs, sitemap, analytics and ad identity in this source repository. A main-branch push runs `.github/workflows/shared-worker.yml` and calls the configured secret Cloudflare deploy hook; Cloudflare builds and publishes the group's source HEADs. Do not run this source repository's wrangler deploy or recreate its previous independent Worker. After push, run the central `cloudflare_push_verify.py --repo-root <this source checkout>`; it resolves this mapping and requires source SHA, successful group build, 100% active version and live domain marker to agree. Source SHA and deployment repository SHA are different identities.
+
+## Current production deployment
+
+The domain remains bound to the existing independent Worker `kingdomrush6genesistd-pro`. Git main pushes use its Cloudflare build trigger (`npm install && npm run build`, `npx wrangler deploy`) with configured non-interactive credentials. Shared-pool metadata had been prepared before migration actually occurred and was removed during this manual V4 release. Do not introduce a shared deployment path without a separately authorized migration.

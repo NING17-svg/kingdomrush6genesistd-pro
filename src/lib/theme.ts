@@ -8,6 +8,7 @@ export function themeClassName(theme: ThemeConfig): string {
   return [
     "site-theme",
     `theme-${theme.mode}`,
+    `navigation-${theme.navigation ?? "header"}`,
     `density-${theme.density}`,
     `background-${theme.background.mode}`,
     `motif-${theme.decoration.motif}`,

@@ -1,0 +1,122 @@
+{
+  "source": "site-launch/templates/game-guide-site-template",
+  "sourceCommitSha": "714612aed19d091836c8647dd5ae6c3aac897b1f",
+  "copiedFiles": [
+    {
+      "path": "src/components/content/AnswerSummary.tsx",
+      "sha256": "743c5b7bf3d0f48828925c804880505eb0bd555e3d57c72022169e00ded96fe7"
+    },
+    {
+      "path": "src/components/content/ComparisonBlock.tsx",
+      "sha256": "8c6efe4eb76bb2390aa8090003365fb051d80fa4023e2263e51cf585a9f09790"
+    },
+    {
+      "path": "src/components/content/DataTableBlock.tsx",
+      "sha256": "5e41fe41ebaee204591a7bdd148e1d7d52111df54fa6eeb6b6c2cae54308dfc1"
+    },
+    {
+      "path": "src/components/content/EntityGrid.tsx",
+      "sha256": "821a3feec207ee11fe07490242a8f27064474bbe69bc540857463857e2c86d84"
+    },
+    {
+      "path": "src/components/content/FAQBlock.tsx",
+      "sha256": "da61561274ad6f5abfceae44eae955881aa74ae4f93bbfcfee3f961d51a9bb23"
+    },
+    {
+      "path": "src/components/content/FactPanel.tsx",
+      "sha256": "f377f7664e54826ce5b9d69316eb177066c6b0bd3dac38f8ca4eb3b503f464b6"
+    },
+    {
+      "path": "src/components/content/FeaturedGuides.tsx",
+      "sha256": "70d6fbcf42292075b58cd6f8b156713d044b9e2fefc15179aa7006a053325224"
+    },
+    {
+      "path": "src/components/content/GuideIndex.tsx",
+      "sha256": "f417becfcda8688d721bb300045aa37ef369879d68d77ae32e7f78f0d0a41dad"
+    },
+    {
+      "path": "src/components/content/KeyFacts.tsx",
+      "sha256": "6bdb9d56af5a6fc4b4069983f134084897a3e3fc680ab7ea67dcb8e298e717ca"
+    },
+    {
+      "path": "src/components/content/MediaGallery.tsx",
+      "sha256": "dea7ff671a165a8d6e1ec90d3ae371a361941fb79022fd2bff229fee59795652"
+    },
+    {
+      "path": "src/components/content/ModuleRenderer.tsx",
+      "sha256": "0a32bbc0e145543de657916776a25ff1ee89eaedd3ce9754ab2bbf1d19e4a6ab"
+    },
+    {
+      "path": "src/components/content/PageContents.tsx",
+      "sha256": "a95b02dd56b93b218a5f3c8a99b921f98d873d69b758fcc1fc7a1c9a327e389f"
+    },
+    {
+      "path": "src/components/content/Progression.tsx",
+      "sha256": "fb38fa226686bbf28233095ad534371f22536c9bda8c79d1e97cff54bde4e23e"
+    },
+    {
+      "path": "src/components/content/RecipeList.tsx",
+      "sha256": "c07119bef6678c728774e9ab57edaf24e27d1ee4f2724dfb809bb121469c13c0"
+    },
+    {
+      "path": "src/components/content/RelatedLinks.tsx",
+      "sha256": "75e5b290679f87324572ce335c3be9c55fd3ccc9ff050b6e6653e4c2e3086dc4"
+    },
+    {
+      "path": "src/components/content/RichText.tsx",
+      "sha256": "21a0a8a6aa6d2fdcb4080019915c39256949f3c6a18cc79e1b27ad663371509c"
+    },
+    {
+      "path": "src/components/content/ScheduleBlock.tsx",
+      "sha256": "6bf290d4436df69bd6fe7fd52271f56ebf1a23ab26b0bf56a1b65846934ff97f"
+    },
+    {
+      "path": "src/components/content/StatusCallout.tsx",
+      "sha256": "b1044287e82cde09b43965cd787fa2b201f01053ae6311119ef4b598f57b8972"
+    },
+    {
+      "path": "src/components/content/StepList.tsx",
+      "sha256": "dc288bc7bde53c9e8a5dc7ed663b653c788bb7dd42c5f45551e111fefab9efae"
+    },
+    {
+      "path": "src/components/layout/GuideDisclosure.tsx",
+      "sha256": "fc006210fd2dab4a49786b59efc8a7fb481afc7c56e3b55c553d32dfffdfbe01"
+    },
+    {
+      "path": "src/components/layout/WikiNavigation.tsx",
+      "sha256": "27ce4e8b73066a80335c370e1e9fc104cb12fe9db677cfcbdf1fb04ad6448986"
+    },
+    {
+      "path": "src/components/media/AssetMedia.tsx",
+      "sha256": "80b1ab8fb9d7fc763ccf2cca8a0e1ae6e96437fc5cdca29c5a6d0899bbc9e932"
+    },
+    {
+      "path": "src/lib/theme.ts",
+      "sha256": "503ae6dd8a949ca58999c9c5b601d3685c15f14ccd51a47baaccf8821a0d65c0"
+    },
+    {
+      "path": "src/styles/modules.css",
+      "sha256": "a96d468cb8dcb79b626a801863ca55fb650ab3b304b5b96c722662276105034a"
+    },
+    {
+      "path": "src/styles/v4-modules.css",
+      "sha256": "8541418ae28a28d3d700c5180d231782a00ea58ef511e83464df9e83b9775dbe"
+    },
+    {
+      "path": "src/types/content.ts",
+      "sha256": "5884ee17c7cc9df58be9c1b3a70546ba1f8c67b16e6e5f3410e85db829475219"
+    },
+    {
+      "path": "src/types/localization.ts",
+      "sha256": "9c6408467b6d15ceb0458b39a28129ee05d926c3c54af2652537a99844863638"
+    },
+    {
+      "path": "src/types/modules.ts",
+      "sha256": "c7b1d62b29180ddeaea1623bf9fe3e1d86385eb8504e3d0129e1a541690d802b"
+    },
+    {
+      "path": "src/types/theme.ts",
+      "sha256": "bb4854a7b69eb38ad5a9e307b9da58cba183cf125d40eba4243035116d2c5501"
+    }
+  ]
+}

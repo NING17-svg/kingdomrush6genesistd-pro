@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-02 - V4 visual composition migration
+
+- Task: Recompose the 22 existing routes through site-owned strategy home, article, and frame components while reusing the shared V4 guide modules and contracts.
+- URLs affected: Existing route identities are unchanged. The homepage H1 and SEO title now use `Kingdom Rush 6: Genesis TD` and `Kingdom Rush 6: Genesis TD Guides, Heroes & Towers`; `CONTENT_INDEX.md` records the current route metadata.
+- Content: The non-home page records and FAQ source remain byte-for-byte equal to baseline `4e0f87a`. The homepage changed only its H1 and SEO title; its module data, facts, FAQ references, quick answer, and review date remain unchanged. No review date was refreshed for this visual-only work.
+- Preservation note: `/heroes` has 12 entity-grid entries while adjacent heading/answer copy says 11 are named and a 12th is unannounced. This inconsistency was not edited and needs a separate source-backed fact review.
+- Shared source: Verbatim component hashes are recorded in `V4_COMPONENTS.json` from template commit `714612aed19d091836c8647dd5ae6c3aac897b1f`.
+- Verification: Local type/lint/template/content/IndexNow/static-build/rendered-SEO and V4 migration checks passed: 22 routes and 48 FAQs. Real browser checks at 1440px and 390px passed list search/filter/reset, spell and hero anchors, site search, initial navigation disclosure, and no-JavaScript rendering of all routes. Seven representative pages have desktop/mobile PNGs and explicit assembly-bound image review in `/Users/ningshiqi/.local/share/game-workflow/v4-template-review/kingdomrush/local/`. Third-party requests were blocked during visual checks; these are not ad-fill or revenue results. Production publication is pending.
+
 ### 2026-09-25 - Known issues & workarounds page added
 
 - Task: Build a new Known Issues & Workarounds page mirroring Ironhide's News/Details/527 post.
@@ -79,4 +88,8 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## 2026-10-01 — shared Worker deployment maintenance
 
-User-authorized routing migration to `guide-pool-06` / Worker `armorsim-wiki`; source push is connected to the shared Cloudflare Git build via the repository deploy hook. Content and public URL identities are unchanged. Completion is tracked by the central group migration report and live source/version verification.
+Shared-pool metadata and a deploy hook were prepared. The 2026-10-02 official API audit confirmed that this domain still used independent Worker `kingdomrush6genesistd-pro`; group 06 was not migrated. This entry is a preparation record, not proof of routing or publication.
+
+### Deployment correction for this release
+
+Official Cloudflare API confirms the existing independent domain binding. Only the first two groups were migrated in the central maintenance record. Remove the premature shared mapping/workflow and restored this Worker’s original Git trigger and public environment variables using its existing build token. No DNS, domain binding, Worker identity or other pool member changes. Final build/version/public checks will be recorded after publication.

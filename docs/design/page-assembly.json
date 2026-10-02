@@ -1,0 +1,303 @@
+{
+  "schema": "v4-page-assembly",
+  "migration_baseline_sha": "4e0f87aabf8b7e420c7e999d1bf8f1ec5c0f5016",
+  "scope": "Manual migration of the actual 22 published routes, including post-launch additions; not a new Planner output",
+  "navigation": {
+    "desktop": "Four short top links and grouped interior tree",
+    "mobile": "Brand/search; interior guide tree initially collapsed"
+  },
+  "layouts": [
+    {
+      "id": "strategy-home",
+      "page_ids": [
+        "home"
+      ],
+      "desktop": "Game-specific blue reference surface; grouped guide rail on interior pages",
+      "mobile": "Single-column reading; guide tree initially collapsed; local list controls wrap",
+      "regions": [
+        {
+          "id": "identity",
+          "component": "identity-hero",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "task-entries",
+          "component": "task-entries",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "roster",
+          "component": "entity-grid",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "encounters",
+          "component": "task-entries",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "directory",
+          "component": "guide-index",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "recent",
+          "component": "related-guides",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "context",
+          "component": "source-notice",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        }
+      ],
+      "acceptance": [
+        "Game identity, short task links and official scene precede the expandable launch notes",
+        "Roster previews and grouped real-route directory remain readable without page overflow"
+      ]
+    },
+    {
+      "id": "strategy-reference",
+      "page_ids": [
+        "heroes-list",
+        "towers-list",
+        "controls-mechanics"
+      ],
+      "desktop": "Game-specific blue reference surface; grouped guide rail on interior pages",
+      "mobile": "Single-column reading; guide tree initially collapsed; local list controls wrap",
+      "regions": [
+        {
+          "id": "heading",
+          "component": "identity-hero",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "answer",
+          "component": "answer-summary",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "facts",
+          "component": "key-facts",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "scene",
+          "component": "media",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "contents",
+          "component": "page-contents",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "body",
+          "component": "guide-modules",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "faq",
+          "component": "faq",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "related",
+          "component": "related-guides",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        }
+      ],
+      "acceptance": [
+        "Heading, original review date and answer appear before the guide modules",
+        "Grouped navigation and module contents are usable without page overflow",
+        "Named entries have readable summaries and native search/filter controls"
+      ]
+    },
+    {
+      "id": "strategy-guide",
+      "page_ids": [
+        "release-date-status",
+        "system-requirements",
+        "price-editions",
+        "demo-download",
+        "campaign-stages",
+        "enemies-races",
+        "bosses-list",
+        "platforms-faq",
+        "vs-frontiers",
+        "beginners-guide",
+        "guides",
+        "wiki",
+        "known-issues",
+        "faq"
+      ],
+      "desktop": "Game-specific blue reference surface; grouped guide rail on interior pages",
+      "mobile": "Single-column reading; guide tree initially collapsed; local list controls wrap",
+      "regions": [
+        {
+          "id": "heading",
+          "component": "identity-hero",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "answer",
+          "component": "answer-summary",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "facts",
+          "component": "key-facts",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "scene",
+          "component": "media",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "contents",
+          "component": "page-contents",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "body",
+          "component": "guide-modules",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "faq",
+          "component": "faq",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "related",
+          "component": "related-guides",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        }
+      ],
+      "acceptance": [
+        "Heading, original review date and answer appear before the guide modules",
+        "Grouped navigation and module contents are usable without page overflow"
+      ]
+    },
+    {
+      "id": "strategy-trust",
+      "page_ids": [
+        "about",
+        "contact",
+        "privacy-policy",
+        "terms"
+      ],
+      "desktop": "Game-specific blue reference surface; grouped guide rail on interior pages",
+      "mobile": "Single-column reading; guide tree initially collapsed; local list controls wrap",
+      "regions": [
+        {
+          "id": "heading",
+          "component": "identity-hero",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "answer",
+          "component": "answer-summary",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "facts",
+          "component": "key-facts",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "scene",
+          "component": "media",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "contents",
+          "component": "page-contents",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "body",
+          "component": "guide-modules",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": false
+        },
+        {
+          "id": "faq",
+          "component": "faq",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        },
+        {
+          "id": "related",
+          "component": "related-guides",
+          "source": "Existing page data and registered official assets",
+          "mobile": "Stack in document order",
+          "optional": true
+        }
+      ],
+      "acceptance": [
+        "Heading, original review date and answer appear before the guide modules",
+        "Grouped navigation and module contents are usable without page overflow"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import { PageShell } from "@/components/layout/PageShell";
 import { PageRenderer } from "@/components/pages/PageRenderer";
 import { getIndexablePages, getPageByUrl } from "@/lib/content";
 import { metadataForPage } from "@/lib/seo";
@@ -45,8 +44,6 @@ export default async function Page({ params }: PageProps) {
   if (!page) notFound();
 
   return (
-    <PageShell locale={page.locale}>
-      <PageRenderer page={page} />
-    </PageShell>
+    <PageRenderer page={page} />
   );
 }

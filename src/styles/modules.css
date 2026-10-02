@@ -78,10 +78,9 @@
 }
 
 .prose-module {
-  padding: var(--card-padding);
-  border: var(--border-width) solid var(--line);
-  border-radius: var(--radius);
-  background: var(--surface-1);
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .entity-grid,
@@ -278,4 +277,40 @@
   .schedule-item {
     grid-template-columns: 1fr;
   }
+}
+
+/* V4: reading structure survives Markdown-to-page assembly. */
+.rich-text {
+  display: grid;
+  gap: 1em;
+  max-width: 75ch;
+  overflow-wrap: anywhere;
+}
+.rich-text > * { margin-block: 0; }
+.rich-text ul, .rich-text ol { padding-inline-start: 1.5em; }
+.rich-text li + li { margin-top: 0.5em; }
+.rich-text li > p + p { margin-top: 0.5em; }
+.rich-text blockquote { margin-inline: 0; padding: 0.5em 1em; border-inline-start: 3px solid var(--accent-primary); background: var(--surface-2); }
+.rich-text a, .rich-inline a { color: var(--text-link); text-decoration: underline; text-underline-offset: 3px; }
+.rich-text pre { overflow-x: auto; padding: 1em; background: var(--surface-2); }
+.rich-inline p { margin: 0; }
+.quick-answer__context {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: var(--border-width) solid var(--line);
+}
+.quick-answer__context summary { width: fit-content; cursor: pointer; color: var(--text-link); font-weight: 700; }
+.quick-answer__context .rich-text { margin-top: 10px; font-weight: 400; }
+.page-contents { padding: 14px 18px; border: var(--border-width) solid var(--line); background: var(--surface-2); border-radius: var(--radius); }
+.page-contents summary { cursor: pointer; font-weight: 700; }
+.page-contents[open] .rail-links { margin-top: 12px; }
+.inline-contents { margin-block: 20px; }
+.mobile-contents { display: none; }
+.nav-group { position: relative; }
+.nav-group summary { cursor: pointer; font-weight: 700; }
+.nav-group-links { position: absolute; z-index: 20; top: calc(100% + 12px); min-width: 220px; padding: 14px; display: grid; gap: 12px; border: var(--border-width) solid var(--line); background: var(--surface-1); border-radius: var(--radius); box-shadow: var(--shadow); }
+@media (max-width: 900px) {
+  .mobile-contents { display: block; }
+  .right-rail .rail-contents { display: none; }
+  .nav-group-links { position: static; margin-top: 10px; box-shadow: none; }
 }
